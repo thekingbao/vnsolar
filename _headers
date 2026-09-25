@@ -1,0 +1,46 @@
+[[redirects]]
+  from = "/pages/dien-mat-troi.html"
+  to   = "/pages/dien-mat-troi/"
+  status = 301
+
+[[redirects]]
+  from = "/pages/tru-sac.html"
+  to   = "/pages/tru-sac/"
+  status = 301
+
+[[redirects]]
+  from = "/pages/dich-vu.html"
+  to   = "/pages/dich-vu/"
+  status = 301
+
+[[redirects]]
+  from = "/pages/tin-tuc.html"
+  to   = "/pages/tin-tuc/"
+  status = 301
+
+[[redirects]]
+  from = "/pages/lien-he.html"
+  to   = "/pages/lien-he/"
+  status = 301
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/favicon_io/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
