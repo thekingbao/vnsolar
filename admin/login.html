@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập Admin – VN Solar</title>
+    <title>Đăng nhập Admin – NLP Group</title>
     <link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
     <link rel="stylesheet" href="../css/admin.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
@@ -12,7 +12,7 @@
 <div class="login-wrap">
     <div class="login-card">
         <div style="text-align:center;margin-bottom:1.75rem">
-            <div style="font-size:1.6rem;font-weight:900;letter-spacing:-.03em;color:#1f2328;margin-bottom:.35rem">VN<span style="color:#16a34a">SOLAR</span></div>
+            <div style="font-size:1.6rem;font-weight:900;letter-spacing:-.03em;color:#1f2328;margin-bottom:.35rem">NLP <span style="color:#16a34a">GROUP</span></div>
             <p style="font-size:.85rem;color:#57606a">Đăng nhập vào trang quản trị</p>
         </div>
 
@@ -39,7 +39,7 @@
 
         <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #e5e7eb;font-size:.78rem;color:#57606a;text-align:center">
             <i class="fa-solid fa-circle-info" style="color:#16a34a;margin-right:.3rem"></i>
-            Demo: <code style="background:#f3f4f6;padding:.1rem .4rem;border-radius:.3rem">admin</code> / <code style="background:#f3f4f6;padding:.1rem .4rem;border-radius:.3rem">vnsolar2025</code>
+            Demo: <code style="background:#f3f4f6;padding:.1rem .4rem;border-radius:.3rem">admin</code> / <code style="background:#f3f4f6;padding:.1rem .4rem;border-radius:.3rem">nlpgroup2025</code>
         </div>
 
         <div style="margin-top:1rem;text-align:center">
@@ -73,8 +73,8 @@
         e.preventDefault();
         const user = document.getElementById('loginUser').value;
         const pass = document.getElementById('loginPass').value;
-        if (user === 'admin' && pass === 'vnsolar2025') {
-            sessionStorage.setItem('vns_admin_token', 'demo_' + Date.now());
+        if (user === 'admin' && pass === 'nlpgroup2025') {
+            sessionStorage.setItem('nlpgroup_admin_token', 'demo_' + Date.now());
             window.location.href = 'index.html';
         } else {
             showAlert('Sai tên đăng nhập hoặc mật khẩu. Vui lòng thử lại.');
@@ -82,7 +82,7 @@
     }
 
     // If already logged in, redirect
-    if (sessionStorage.getItem('vns_admin_token')) {
+    if (sessionStorage.getItem('nlpgroup_admin_token')) {
         window.location.href = 'index.html';
     }
 </script>

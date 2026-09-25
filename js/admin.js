@@ -1,12 +1,12 @@
-/**
- * VN Solar – Admin JS
+﻿/**
+ * NLP Group – Admin JS
  * Handles: page/URL CRUD, lead management, settings, auth guard
  */
 
 /* ── Auth Guard ──────────────────────────────────── */
 (function authGuard() {
     const isLogin = window.location.pathname.includes('login');
-    const token   = sessionStorage.getItem('vns_admin_token');
+    const token   = sessionStorage.getItem('nlpgroup_admin_token');
     if (!isLogin && !token) {
         window.location.href = 'login.html';
     }
@@ -16,7 +16,7 @@
 })();
 
 /* ── DB (localStorage persistence) ──────────────── */
-const DB_KEY = 'vnsolar_admin_db';
+const DB_KEY = 'nlpgroup_admin_db';
 
 function getDB() {
     const raw = localStorage.getItem(DB_KEY);
@@ -183,7 +183,7 @@ function autoSlug() {
 
 /* ── Leads Manager ───────────────────────────────── */
 async function renderLeads(filter = '') {
-    const leads = JSON.parse(localStorage.getItem('vnsolar_leads') || '[]');
+    const leads = JSON.parse(localStorage.getItem('nlpgroup_leads') || '[]');
     const tbody = document.getElementById('leadsBody');
     if (!tbody) return;
 
@@ -208,15 +208,15 @@ async function renderLeads(filter = '') {
 }
 
 function deleteLead(idx) {
-    const leads = JSON.parse(localStorage.getItem('vnsolar_leads') || '[]');
+    const leads = JSON.parse(localStorage.getItem('nlpgroup_leads') || '[]');
     leads.splice(idx, 1);
-    localStorage.setItem('vnsolar_leads', JSON.stringify(leads));
+    localStorage.setItem('nlpgroup_leads', JSON.stringify(leads));
     renderLeads();
 }
 
 function clearLeads() {
     if (!confirm('Xoá toàn bộ leads?')) return;
-    localStorage.removeItem('vnsolar_leads');
+    localStorage.removeItem('nlpgroup_leads');
     renderLeads();
 }
 
@@ -238,8 +238,8 @@ window.doLogin = function(e) {
     const user = document.getElementById('loginUser')?.value;
     const pass = document.getElementById('loginPass')?.value;
     // Simple demo credentials – replace with server auth in production
-    if (user === 'admin' && pass === 'vnsolar2025') {
-        sessionStorage.setItem('vns_admin_token', 'demo_token_' + Date.now());
+    if (user === 'admin' && pass === 'nlpgroup2025') {
+        sessionStorage.setItem('nlpgroup_admin_token', 'demo_token_' + Date.now());
         window.location.href = 'index.html';
     } else {
         showAlert('Sai tên đăng nhập hoặc mật khẩu.', 'danger');
@@ -247,7 +247,7 @@ window.doLogin = function(e) {
 };
 
 window.doLogout = function() {
-    sessionStorage.removeItem('vns_admin_token');
+    sessionStorage.removeItem('nlpgroup_admin_token');
     window.location.href = 'login.html';
 };
 

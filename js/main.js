@@ -1,5 +1,5 @@
-/**
- * VN Solar – Main JS
+﻿/**
+ * NLP Group – Main JS
  * Handles: navbar scroll, mobile menu, modal, calculator, page-links from DB
  */
 
@@ -119,9 +119,9 @@ window.submitForm = function(e) {
     };
 
     // Save to localStorage as lead log (production: send to backend)
-    const leads = JSON.parse(localStorage.getItem('vnsolar_leads') || '[]');
+    const leads = JSON.parse(localStorage.getItem('nlpgroup_leads') || '[]');
     leads.unshift(data);
-    localStorage.setItem('vnsolar_leads', JSON.stringify(leads));
+    localStorage.setItem('nlpgroup_leads', JSON.stringify(leads));
 
     setTimeout(() => {
         submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Đã Gửi Thành Công!';

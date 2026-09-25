@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ VN Solar – Tư vấn miễn phí 24/7</title>
-    <meta name="description" content="Liên hệ VN Solar để được tư vấn miễn phí về điện mặt trời và trạm sạc xe điện. Kỹ sư phản hồi trong 15 phút.">
+    <title>Liên hệ NLP Group – Tư vấn miễn phí 24/7</title>
+    <meta name="description" content="Liên hệ NLP Group để được tư vấn miễn phí về điện mặt trời và trạm sạc xe điện. Kỹ sư phản hồi trong 15 phút.">
     <link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
     <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png">
@@ -27,7 +27,7 @@
 <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20 items-center">
-            <a href="../index.html" class="text-2xl font-black text-dark tracking-tighter">VN<span class="text-solar-600">SOLAR</span></a>
+            <a href="../index.html" class="text-2xl font-black text-dark tracking-tighter">NLP <span class="text-solar-600">GROUP</span></a>
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="../index.html#gioi-thieu" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Giới thiệu</a>
                 <a href="dien-mat-troi.html" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Điện mặt trời</a>
@@ -64,7 +64,7 @@
             <span class="text-solar-400">Liên hệ</span>
         </nav>
         <h1 class="text-4xl font-black text-white mb-3">Liên hệ tư vấn</h1>
-        <p class="text-gray-300 max-w-xl">Kỹ sư VN Solar phản hồi trong vòng 15 phút giờ làm việc. Tư vấn & khảo sát 100% miễn phí.</p>
+        <p class="text-gray-300 max-w-xl">Kỹ sư NLP Group phản hồi trong vòng 15 phút giờ làm việc. Tư vấn & khảo sát 100% miễn phí.</p>
     </div>
 </section>
 
@@ -163,7 +163,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
-                <div class="text-2xl font-black text-white tracking-tighter mb-4">VN<span class="text-solar-500">SOLAR</span></div>
+                <div class="text-2xl font-black text-white tracking-tighter mb-4">NLP <span class="text-solar-500">GROUP</span></div>
                 <p class="text-sm text-gray-400 mb-4 leading-relaxed">Đơn vị tiên phong cung cấp giải pháp Năng lượng mặt trời & Hạ tầng trạm sạc xe điện tại Việt Nam.</p>
             </div>
             <div>
@@ -193,7 +193,7 @@
             </div>
         </div>
         <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
-            <p>&copy; 2026 VN SOLAR (muabandien.com). All rights reserved.</p>
+            <p>&copy; 2026 NLP Group (muabandien.com). All rights reserved.</p>
         </div>
     </div>
 </footer>
@@ -219,9 +219,9 @@ function submitContactPage(e) {
         source:  'lien-he',
         time:    new Date().toISOString(),
     };
-    const leads = JSON.parse(localStorage.getItem('vnsolar_leads') || '[]');
+    const leads = JSON.parse(localStorage.getItem('nlpgroup_leads') || '[]');
     leads.unshift(data);
-    localStorage.setItem('vnsolar_leads', JSON.stringify(leads));
+    localStorage.setItem('nlpgroup_leads', JSON.stringify(leads));
 
     setTimeout(() => {
         btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i>Đã gửi thành công!';
