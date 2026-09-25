@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Solar – Giải pháp Năng lượng mặt trời & Trạm sạc xe điện</title>
+    <meta name="description" content="VN Solar cung cấp giải pháp điện mặt trời áp mái và trạm sạc xe điện thông minh B2B/B2C toàn quốc. Tiết kiệm 40–70% hóa đơn điện. Phù hợp NĐ 135/2024.">
+    <meta name="keywords" content="điện mặt trời, biến tần hybrid, trạm sạc xe điện, DEYE, SOLIS, VN Solar, tự sản tự tiêu">
+    <meta name="author" content="VN Solar">
+    <meta property="og:title" content="VN Solar – Giải pháp Năng lượng mặt trời & Trạm sạc xe điện">
+    <meta property="og:description" content="Tiết kiệm 40–70% hóa đơn điện. Lắp đặt toàn quốc. Phù hợp NĐ 135/2024.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muabandien.com">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"       href="favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon"               href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest"                        href="favicon_io/site.webmanifest">
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        solar: {
+                            50:  '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        },
+                        dark: '#0f172a'
+                    },
+                    animation: { 'marquee': 'marquee 25s linear infinite' },
+                    keyframes: {
+                        marquee: {
+                            '0%':   { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- ── NAVBAR ────────────────────────────────────── -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center">
+                    <div class="text-2xl font-black text-dark tracking-tighter">
+                        VN<span class="text-solar-600">SOLAR</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#gioi-thieu" class="text-sm font-semibold text-gray-600 hover:text-solar-600 transition-colors">Giới thiệu</a>
+
+                    <!-- Điện mặt trời dropdown -->
+                    <div class="relative group">
+                        <button class="text-sm font-semibold text-gray-600 hover:text-solar-600 flex items-center transition-colors">
+                            Điện mặt trời <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-52 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0">
+                            <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-2">
+                                <a href="pages/bien-tan-hoa-luoi.html" data-page-slug="bien-tan-hoa-luoi" class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Biến tần Hòa lưới</a>
+                                <a href="pages/bien-tan-hybrid.html"   data-page-slug="bien-tan-hybrid"   class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Biến tần Hybrid</a>
+                                <a href="pages/tam-pin-solar.html"     data-page-slug="tam-pin-solar"     class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Tấm pin Solar</a>
+                                <a href="pages/pin-luu-tru.html"       data-page-slug="pin-luu-tru"       class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Pin Lưu trữ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trụ sạc dropdown -->
+                    <div class="relative group">
+                        <button class="text-sm font-semibold text-gray-600 hover:text-solar-600 flex items-center transition-colors">
+                            Trụ sạc ô tô <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-60 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0">
+                            <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-2">
+                                <a href="pages/tru-sac-dc.html" data-page-slug="tru-sac-dc" class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Trụ sạc DC (120kW / 240kW)</a>
+                                <a href="pages/tru-sac-ac.html" data-page-slug="tru-sac-ac" class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Trụ sạc AC</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dịch vụ dropdown -->
+                    <div class="relative group">
+                        <button class="text-sm font-semibold text-gray-600 hover:text-solar-600 flex items-center transition-colors">
+                            Dịch vụ <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-64 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0">
+                            <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-2">
+                                <a href="pages/thue-mua.html" data-page-slug="thue-mua-dien-mat-troi" class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Điện mặt trời Thuê – Mua</a>
+                                <a href="pages/tra-cham.html" data-page-slug="mua-tra-cham-0-lai"     class="block px-4 py-2 text-sm text-gray-700 hover:bg-solar-50 hover:text-solar-600">Mua trả chậm (không lãi suất)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extra links -->
+                    <a href="pages/tin-tuc.html" class="text-sm font-semibold text-gray-600 hover:text-solar-600 transition-colors">Tin tức</a>
+                    <a href="pages/lien-he.html" class="text-sm font-semibold text-gray-600 hover:text-solar-600 transition-colors">Liên hệ</a>
+                </div>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center gap-3">
+                    <button onclick="openModal()" class="bg-solar-600 hover:bg-solar-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-colors shadow-lg shadow-solar-500/30 flex items-center gap-2">
+                        <i class="fa-solid fa-phone-volume"></i> Tư vấn ngay
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-solar-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-1 shadow-xl">
+                <a href="#gioi-thieu"           class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 hover:text-solar-600 rounded-lg">Giới thiệu</a>
+                <div class="px-3 py-2 text-sm font-bold text-gray-400 uppercase tracking-wider">Điện mặt trời</div>
+                <a href="pages/bien-tan-hoa-luoi.html" class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Biến tần Hòa lưới</a>
+                <a href="pages/bien-tan-hybrid.html"   class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Biến tần Hybrid</a>
+                <a href="pages/tam-pin-solar.html"     class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Tấm pin Solar</a>
+                <a href="pages/pin-luu-tru.html"       class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Pin Lưu trữ</a>
+                <div class="px-3 py-2 mt-2 text-sm font-bold text-gray-400 uppercase tracking-wider">Trụ sạc ô tô</div>
+                <a href="pages/tru-sac-dc.html"        class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Trụ sạc DC (120kW/240kW)</a>
+                <a href="pages/tru-sac-ac.html"        class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Trụ sạc AC</a>
+                <div class="px-3 py-2 mt-2 text-sm font-bold text-gray-400 uppercase tracking-wider">Dịch vụ</div>
+                <a href="pages/thue-mua.html"          class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Thuê – Mua</a>
+                <a href="pages/tra-cham.html"          class="block pl-6 py-2 text-base font-medium text-gray-600 hover:text-solar-600">Mua trả chậm</a>
+                <a href="pages/tin-tuc.html"           class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Tin tức</a>
+                <a href="pages/lien-he.html"           class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Liên hệ</a>
+                <div class="mt-4 px-3">
+                    <button onclick="openModal()" class="w-full bg-solar-600 text-white px-4 py-3 rounded-xl font-semibold flex justify-center items-center gap-2 shadow-lg shadow-solar-500/30">
+                        <i class="fa-solid fa-phone"></i> Gọi ngay: 0333.864.000
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── HERO SECTION ───────────────────────────────── -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-pattern">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072&auto=format&fit=crop" alt="Solar Panels Background" class="w-full h-full object-cover mix-blend-overlay">
+        </div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-solar-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-10 -left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <div class="text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6">
+                        <span class="flex h-2 w-2 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-solar-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-solar-500"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-solar-50 uppercase tracking-wide">Đúng Nghị định 135/2024 · Tự sản xuất, tự tiêu thụ</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+                        Hóa đơn điện tháng này<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-solar-400 to-yellow-400">đang "đốt" bao nhiêu</span><br>
+                        lợi nhuận của bạn?
+                    </h1>
+
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+                        Khách sạn, nhà xưởng, chung cư và bãi xe trên cả nước đang tiết kiệm <strong class="text-white">40–70% hóa đơn điện</strong> mỗi tháng. Hoàn vốn trong <strong class="text-white">3–5 năm</strong>, vận hành ổn định <strong class="text-white">25 năm</strong> — không phụ thuộc lưới điện quốc gia.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="#calculator" class="bg-solar-600 hover:bg-solar-500 text-white px-8 py-4 rounded-xl font-bold text-center transition-all shadow-lg shadow-solar-500/40 transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-bolt"></i> Tính tiết kiệm của tôi
+                        </a>
+                        <button onclick="openModal()" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-center transition-all backdrop-blur-md flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-calendar-check"></i> Khảo sát miễn phí
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-400 font-medium">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-solar-500"></i> Bảo hành thiết bị 10 năm</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-solar-500"></i> Lắp đặt toàn quốc</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-solar-500"></i> Phù hợp pháp lý mới</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-solar-500"></i> Kỹ sư giám sát 24/7</div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative hidden lg:block">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-solar-500/20 to-transparent rounded-3xl transform rotate-3 scale-105"></div>
+                    <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?q=80&w=2069&auto=format&fit=crop" alt="Hệ thống điện mặt trời áp mái công nghiệp" class="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full border border-white/10">
+
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xl">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 font-semibold uppercase">ROI Trung bình</p>
+                            <p class="text-xl font-black text-gray-800">18-26% / năm</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TICKER ─────────────────────────────────────── -->
+    <div class="bg-solar-600 py-3 overflow-hidden border-y border-solar-700 shadow-inner relative z-20">
+        <div class="flex whitespace-nowrap overflow-hidden no-scrollbar">
+            <div class="animate-marquee inline-block text-white font-medium text-sm px-4">
+                <span class="mx-6">🚀 Giá điện tăng 47% trong 5 năm qua</span> •
+                <span class="mx-6">💰 Mỗi 1 kWp solar tiết kiệm ~4 triệu đ/năm</span> •
+                <span class="mx-6">☀️ Việt Nam có 2.000–2.500 giờ nắng/năm — top 5 châu Á</span> •
+                <span class="mx-6">🔋 Hệ thống Hybrid tự cấp điện khi mất lưới</span> •
+                <span class="mx-6">⚡ Trạm sạc DC 120kW sạc đầy ô tô điện trong 30 phút</span> •
+                <span class="mx-6">📜 NĐ 135/2024: Tự sản xuất, tự tiêu thụ không cần bán lưới</span>
+            </div>
+            <div class="animate-marquee inline-block text-white font-medium text-sm px-4 absolute top-3" style="animation-delay: -12.5s; right: -100%;">
+                <span class="mx-6">🚀 Giá điện tăng 47% trong 5 năm qua</span> •
+                <span class="mx-6">💰 Mỗi 1 kWp solar tiết kiệm ~4 triệu đ/năm</span> •
+                <span class="mx-6">☀️ Việt Nam có 2.000–2.500 giờ nắng/năm — top 5 châu Á</span> •
+                <span class="mx-6">🔋 Hệ thống Hybrid tự cấp điện khi mất lưới</span> •
+                <span class="mx-6">⚡ Trạm sạc DC 120kW sạc đầy ô tô điện trong 30 phút</span> •
+                <span class="mx-6">📜 NĐ 135/2024: Tự sản xuất, tự tiêu thụ không cần bán lưới</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── PAIN POINTS ────────────────────────────────── -->
+    <section class="py-24 bg-white" id="gioi-thieu">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-solar-600 font-bold uppercase tracking-wider text-sm mb-2">Bức tranh năng lượng hiện tại</p>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Ba nỗi đau mà doanh nghiệp<br>không thể tiếp tục phớt lờ</h2>
+                <p class="text-lg text-gray-600">Không phải thiếu điện — mà là đang trả quá nhiều tiền cho nguồn điện không đáng tin cậy. Đã đến lúc lấy lại quyền kiểm soát.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-red-100 text-red-500 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                    </div>
+                    <div class="text-red-500 font-black text-4xl mb-2">47%<span class="text-lg text-gray-500 font-medium ml-2">Tăng giá</span></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Giá điện tăng liên tục</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">EVN điều chỉnh giá điện nhiều lần. Với mức tiêu thụ lớn của khách sạn hay nhà xưởng, mỗi đợt tăng là hàng chục triệu đồng bốc hơi khỏi biên lợi nhuận — mà bạn hoàn toàn bị động.</p>
+                    <a href="#calculator" class="text-solar-600 font-semibold flex items-center hover:text-solar-700">
+                        Tính chi phí thất thoát <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-plug-circle-xmark"></i>
+                    </div>
+                    <div class="text-orange-500 font-black text-4xl mb-2">0h<span class="text-lg text-gray-500 font-medium ml-2">Cảnh báo</span></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Thiệt hại do mất điện</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">Mưa lớn, quá tải cục bộ — lưới sập, máy lạnh tắt, dây chuyền dừng. Hệ thống Hybrid với pin lưu trữ giữ điện chạy liên tục, cứu vãn hàng trăm triệu đồng tiền đền bù đơn hàng.</p>
+                    <a href="pages/bien-tan-hybrid.html" class="text-solar-600 font-semibold flex items-center hover:text-solar-700">
+                        Giải pháp Hybrid <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-500 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <div class="text-blue-500 font-black text-4xl mb-2">1.5M<span class="text-lg text-gray-500 font-medium ml-2">Xe điện 2026</span></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Thiếu hạ tầng sạc</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-4">Việt Nam sẽ có hàng triệu xe điện lưu thông nhưng trạm sạc công cộng chưa đáp ứng đủ. Bãi xe, khách sạn đầu tư trạm sạc hôm nay sẽ hút khách hàng VIP ngày mai.</p>
+                    <a href="pages/tru-sac.html" class="text-solar-600 font-semibold flex items-center hover:text-solar-700">
+                        Đầu tư Trạm sạc <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TARGET SEGMENTS ───────────────────────────── -->
+    <section class="py-24 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-solar-600 font-bold uppercase tracking-wider text-sm mb-2">Giải pháp cá nhân hóa</p>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Bạn thuộc nhóm nào? <br>Chọn đúng — tiết kiệm đúng.</h2>
+                <p class="text-lg text-gray-600">Chúng tôi không bán thiết bị — VN Solar thiết kế giải pháp năng lượng tối ưu hóa dòng tiền cho từng mô hình kinh doanh.</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Group 1: Residential -->
+                <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-48 h-48 bg-blue-50 rounded-full flex items-center justify-center relative">
+                            <div class="absolute inset-0 border-2 border-blue-100 rounded-full animate-ping opacity-20"></div>
+                            <i class="fa-solid fa-house-chimney text-6xl text-blue-500"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <div class="text-sm font-bold text-blue-500 uppercase tracking-wider mb-2">Hộ gia đình · Biệt thự</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gray-900 mb-4">Tự chủ điện — Không lo hóa đơn</h3>
+                        <p class="text-gray-600 mb-6 text-lg">Hóa đơn điện sinh hoạt 1–5 triệu/tháng? Hệ thống Hybrid 6–10 kWp kết hợp pin lưu trữ Lithium giúp tự cấp điện ban ngày, dùng pin ban đêm. Máy lạnh chạy phà phà mà không tốn 1 xu tiền lưới, cúp điện vẫn sinh hoạt bình thường.</p>
+                        <div class="flex flex-wrap gap-4 mb-6">
+                            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
+                                <span class="block text-2xl font-black text-gray-900">55%</span>
+                                <span class="text-xs text-gray-500 uppercase font-semibold">Giảm hóa đơn</span>
+                            </div>
+                            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
+                                <span class="block text-2xl font-black text-gray-900">5 Năm</span>
+                                <span class="text-xs text-gray-500 uppercase font-semibold">Hoàn vốn</span>
+                            </div>
+                        </div>
+                        <button onclick="openModal()" class="text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition-colors shadow-md shadow-blue-500/20">
+                            Khảo sát mái nhà miễn phí
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Group 2: B2B Solar -->
+                <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-md border border-solar-100 flex flex-col md:flex-row-reverse gap-8 items-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-solar-500 rounded-bl-full opacity-10"></div>
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-48 h-48 bg-solar-50 rounded-full flex items-center justify-center relative">
+                            <i class="fa-solid fa-industry text-6xl text-solar-500"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <div class="text-sm font-bold text-solar-600 uppercase tracking-wider mb-2">Nhà xưởng · Khách sạn · Resort</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gray-900 mb-4">Bảo vệ biên lợi nhuận cốt lõi</h3>
+                        <p class="text-gray-600 mb-6 text-lg">Hóa đơn điện hàng chục đến hàng trăm triệu là "kẻ thù" thầm lặng. Hệ thống Solar (50–500 kWp) cắt đứt sự phụ thuộc này. Mô hình tự sản - tự tiêu hợp pháp, lắp trên mái tôn xưởng, biến chi phí vận hành thành tài sản sinh lời.</p>
+                        <div class="flex flex-wrap gap-4 mb-6">
+                            <div class="bg-solar-50 px-4 py-2 rounded-lg border border-solar-100">
+                                <span class="block text-2xl font-black text-solar-700">40-70%</span>
+                                <span class="text-xs text-solar-600 uppercase font-semibold">Cắt giảm chi phí</span>
+                            </div>
+                            <div class="bg-solar-50 px-4 py-2 rounded-lg border border-solar-100">
+                                <span class="block text-2xl font-black text-solar-700">100%</span>
+                                <span class="text-xs text-solar-600 uppercase font-semibold">Đúng NĐ 135/2024</span>
+                            </div>
+                        </div>
+                        <button onclick="openModal()" class="text-white bg-solar-600 hover:bg-solar-700 px-6 py-3 rounded-xl font-semibold transition-colors shadow-md shadow-solar-500/30">
+                            Nhận dự toán dự án B2B
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Group 3: EV Charging -->
+                <div id="tru-sac" class="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-48 h-48 bg-purple-50 rounded-full flex items-center justify-center relative">
+                            <i class="fa-solid fa-charging-station text-6xl text-purple-500"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <div class="text-sm font-bold text-purple-500 uppercase tracking-wider mb-2">Bãi đỗ xe · Trạm dừng · Cửa hàng</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gray-900 mb-4">Hạ tầng sinh lời tự động</h3>
+                        <p class="text-gray-600 mb-6 text-lg">Mỗi trụ sạc nhanh DC 120kW phục vụ 20-30 xe/ngày. Thu phí sạc bù đắp đầu tư và tạo phễu khách hàng. Khách đi xe điện sẽ ưu tiên chọn ăn uống, nghỉ ngơi tại nơi có sạc. Tích hợp Solar để sạc xe bằng điện mặt trời giá rẻ.</p>
+                        <div class="flex flex-wrap gap-4 mb-6">
+                            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
+                                <span class="block text-2xl font-black text-gray-900">20-30</span>
+                                <span class="text-xs text-gray-500 uppercase font-semibold">Lượt sạc/ngày</span>
+                            </div>
+                            <div class="bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
+                                <span class="block text-2xl font-black text-gray-900">30 Phút</span>
+                                <span class="text-xs text-gray-500 uppercase font-semibold">Sạc đầy 80% pin</span>
+                            </div>
+                        </div>
+                        <button onclick="openModal()" class="text-white bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold transition-colors shadow-md shadow-purple-500/20">
+                            Đầu tư trạm sạc thương mại
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PRODUCTS ───────────────────────────────────── -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <p class="text-solar-600 font-bold uppercase tracking-wider text-sm mb-2">Thiết bị Inverter chính hãng</p>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Biến tần Hybrid — Trái tim của hệ thống</h2>
+                    <p class="text-gray-600">VN Solar phân phối độc quyền DEYE và SOLIS — top thương hiệu toàn cầu, chứng nhận IEC, theo dõi app 24/7.</p>
+                </div>
+                <a href="pages/dien-mat-troi.html" class="hidden md:flex text-gray-600 font-semibold hover:text-solar-600 items-center">
+                    Xem toàn bộ danh mục <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1: Deye 6kW -->
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all group relative product-card">
+                    <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">BÁN CHẠY</div>
+                    <div class="aspect-square bg-gray-50 relative p-6 flex items-center justify-center">
+                        <img src="https://placehold.co/400x400/f3f4f6/1f2937?text=DEYE+Hybrid%0A6kW" alt="Deye Hybrid 6kW" class="object-contain w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 font-bold tracking-widest mb-1">DEYE</p>
+                        <h3 class="text-lg font-black text-gray-900 mb-3 line-clamp-1">Biến tần Hybrid 6kW 1 Pha</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">MPPT kép</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">Wi-Fi App</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-sm text-gray-400 line-through">26.000.000đ</p>
+                            <p class="text-2xl font-black text-solar-600">Liên hệ báo giá</p>
+                        </div>
+                        <button onclick="openModal()" class="w-full bg-gray-900 hover:bg-gray-800 text-white py-2.5 rounded-lg font-semibold transition-colors mb-2">Nhận ưu đãi</button>
+                        <a href="pages/bien-tan-hybrid.html" class="block text-center text-sm text-gray-500 hover:text-solar-600"><i class="fa-solid fa-info-circle"></i> Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Deye 10kW -->
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all group relative product-card">
+                    <div class="aspect-square bg-gray-50 relative p-6 flex items-center justify-center">
+                        <img src="https://placehold.co/400x400/f3f4f6/1f2937?text=DEYE+Hybrid%0A10kW+3P" alt="Deye Hybrid 10kW 3P" class="object-contain w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 font-bold tracking-widest mb-1">DEYE</p>
+                        <h3 class="text-lg font-black text-gray-900 mb-3 line-clamp-1">Biến tần Hybrid 10kW 3 Pha</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">3-phase</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">Cho Xưởng</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-sm text-transparent select-none">-</p>
+                            <p class="text-2xl font-black text-solar-600">Liên hệ báo giá</p>
+                        </div>
+                        <button onclick="openModal()" class="w-full bg-gray-900 hover:bg-gray-800 text-white py-2.5 rounded-lg font-semibold transition-colors mb-2">Nhận báo giá</button>
+                        <a href="pages/bien-tan-hybrid.html" class="block text-center text-sm text-gray-500 hover:text-solar-600"><i class="fa-solid fa-info-circle"></i> Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Solis 6kW -->
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all group relative product-card">
+                    <div class="aspect-square bg-gray-50 relative p-6 flex items-center justify-center">
+                        <img src="https://placehold.co/400x400/f3f4f6/1f2937?text=SOLIS+Hybrid%0A6kW" alt="Solis Hybrid 6kW" class="object-contain w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 font-bold tracking-widest mb-1">SOLIS</p>
+                        <h3 class="text-lg font-black text-gray-900 mb-3 line-clamp-1">Biến tần Hybrid 6kW</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">IP65</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">Tối ưu giá</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-sm text-transparent select-none">-</p>
+                            <p class="text-2xl font-black text-solar-600">Liên hệ báo giá</p>
+                        </div>
+                        <button onclick="openModal()" class="w-full border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white py-2 rounded-lg font-semibold transition-colors mb-2">Tư vấn chọn mẫu</button>
+                        <a href="pages/bien-tan-hoa-luoi.html" class="block text-center text-sm text-gray-500 hover:text-solar-600"><i class="fa-solid fa-info-circle"></i> Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Solis 10kW -->
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all group relative product-card">
+                    <div class="aspect-square bg-gray-50 relative p-6 flex items-center justify-center">
+                        <img src="https://placehold.co/400x400/f3f4f6/1f2937?text=SOLIS+Hybrid%0A10kW" alt="Solis Hybrid 10kW" class="object-contain w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 font-bold tracking-widest mb-1">SOLIS</p>
+                        <h3 class="text-lg font-black text-gray-900 mb-3 line-clamp-1">Biến tần Hybrid 10kW 3P</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">3-phase</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded font-medium">IP65</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-sm text-transparent select-none">-</p>
+                            <p class="text-2xl font-black text-solar-600">Liên hệ báo giá</p>
+                        </div>
+                        <button onclick="openModal()" class="w-full border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white py-2 rounded-lg font-semibold transition-colors mb-2">Tư vấn chọn mẫu</button>
+                        <a href="pages/bien-tan-hoa-luoi.html" class="block text-center text-sm text-gray-500 hover:text-solar-600"><i class="fa-solid fa-info-circle"></i> Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEYE vs SOLIS -->
+            <div class="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100 flex items-start gap-4">
+                <div class="text-3xl text-blue-500"><i class="fa-regular fa-lightbulb"></i></div>
+                <div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-1">DEYE vs SOLIS — Nên chọn hãng nào?</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <strong>DEYE</strong> mạnh mẽ cho hệ thống lưu trữ phức tạp, chịu tải lớn (nhà xưởng, thiết bị nặng).
+                        <strong>SOLIS</strong> là lựa chọn thông minh về chi phí cho hộ gia đình và SME ưu tiên sự ổn định cơ bản.
+                        <em>Để có lựa chọn chính xác, kỹ sư VN Solar cần khảo sát biểu đồ phụ tải thực tế của bạn.</em>
+                    </p>
+                    <a href="pages/dien-mat-troi.html" class="inline-block mt-3 text-sm text-solar-600 font-semibold hover:underline">Xem đầy đủ danh mục sản phẩm →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CALCULATOR ─────────────────────────────────── -->
+    <section id="calculator" class="py-24 bg-dark relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=2069&auto=format&fit=crop" alt="Solar BG" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                    <div>
+                        <h2 class="text-3xl font-black text-gray-900 mb-4">Tính bài toán kinh tế</h2>
+                        <p class="text-gray-600 mb-8">Cho chúng tôi biết tiền điện hiện tại, hệ thống sẽ tự động ước tính công suất cần lắp và số tiền bạn tiết kiệm được mỗi năm.</p>
+
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Mô hình của bạn</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="model" class="peer sr-only" checked>
+                                        <div class="p-3 text-center border-2 border-gray-200 rounded-xl peer-checked:border-solar-500 peer-checked:bg-solar-50 peer-checked:text-solar-700 font-semibold transition-all">
+                                            Hộ gia đình
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="model" class="peer sr-only">
+                                        <div class="p-3 text-center border-2 border-gray-200 rounded-xl peer-checked:border-solar-500 peer-checked:bg-solar-50 peer-checked:text-solar-700 font-semibold transition-all">
+                                            Doanh nghiệp (3 Pha)
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Hóa đơn điện trung bình tháng (VNĐ)</label>
+                                <input type="range" min="1000000" max="100000000" step="1000000" value="5000000" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-solar-600" id="billSlider" oninput="updateCalculator()">
+                                <div class="mt-4 flex justify-between items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                    <span class="text-gray-500 font-medium text-sm">Đang chọn:</span>
+                                    <span class="text-2xl font-black text-solar-600" id="billDisplay">5,000,000 đ</span>
+                                </div>
+                            </div>
+
+                            <button onclick="openModal()" class="w-full bg-dark hover:bg-gray-800 text-white px-6 py-4 rounded-xl font-bold transition-colors text-lg mt-4 shadow-lg flex justify-center items-center gap-2">
+                                Gửi yêu cầu khảo sát chi tiết <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <p class="text-xs text-gray-400 text-center">* Kết quả ước tính mang tính tham khảo. Khảo sát thực tế hoàn toàn miễn phí.</p>
+                        </div>
+                    </div>
+
+                    <!-- Result Dashboard -->
+                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6 text-center border-b border-gray-200 pb-4">Kết quả phân tích sơ bộ</h3>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                                <p class="text-xs text-gray-500 font-bold uppercase mb-1">Công suất đề xuất</p>
+                                <p class="text-2xl font-black text-blue-600" id="powerResult">~ 5 kWp</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                                <p class="text-xs text-gray-500 font-bold uppercase mb-1">Diện tích mái cần</p>
+                                <p class="text-2xl font-black text-gray-800" id="areaResult">~ 25 m²</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-solar-50 p-6 rounded-xl border border-solar-100 text-center mb-4">
+                            <p class="text-sm text-solar-800 font-bold mb-2">Tiết kiệm dự kiến mỗi năm</p>
+                            <p class="text-4xl font-black text-solar-600" id="savingResult">~ 36.000.000 đ</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-gray-100 text-center mb-4">
+                            <p class="text-xs text-gray-500 font-bold uppercase mb-1">Thời gian hoàn vốn dự kiến</p>
+                            <p class="text-2xl font-black text-gray-800" id="paybackResult">~ 4.2 năm</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-sm text-gray-600 bg-white p-4 rounded-xl border border-gray-200">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <p>Tương đương trồng <strong id="treeResult">50</strong> cây xanh và giảm phát thải CO₂ đáng kể.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ─────────────────────────────────────── -->
+    <footer class="bg-dark text-gray-300 pt-16 pb-8 border-t-4 border-solar-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                <!-- Brand -->
+                <div>
+                    <div class="text-2xl font-black text-white tracking-tighter mb-6">
+                        VN<span class="text-solar-500">SOLAR</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Đơn vị tiên phong cung cấp giải pháp Năng lượng mặt trời & Hạ tầng trạm sạc xe điện thông minh B2B/B2C tại Việt Nam.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Giải pháp</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="pages/dien-mat-troi.html" data-slug="dien-mat-troi"     class="hover:text-solar-500 transition-colors">Điện mặt trời hộ gia đình</a></li>
+                        <li><a href="pages/dien-mat-troi.html"                               class="hover:text-solar-500 transition-colors">Điện mặt trời doanh nghiệp</a></li>
+                        <li><a href="pages/bien-tan-hybrid.html" data-slug="bien-tan-hybrid" class="hover:text-solar-500 transition-colors">Hệ thống lưu trữ Hybrid</a></li>
+                        <li><a href="pages/tru-sac.html"         data-slug="tru-sac-o-to-dien" class="hover:text-solar-500 transition-colors">Trạm sạc ô tô điện DC/AC</a></li>
+                        <li><a href="pages/thue-mua.html"        data-slug="thue-mua-dien-mat-troi" class="hover:text-solar-500 transition-colors">Thuê mái xưởng lắp Solar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Hỗ trợ</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="pages/chinh-sach-bao-hanh.html" class="hover:text-solar-500 transition-colors">Chính sách bảo hành</a></li>
+                        <li><a href="pages/tin-tuc.html"              class="hover:text-solar-500 transition-colors">Hướng dẫn NĐ 135/2024</a></li>
+                        <li><a href="pages/dien-mat-troi.html"        class="hover:text-solar-500 transition-colors">Tải tài liệu kỹ thuật</a></li>
+                        <li><a href="pages/faq.html"                  class="hover:text-solar-500 transition-colors">Câu hỏi thường gặp</a></li>
+                        <li><a href="pages/lien-he.html"              class="hover:text-solar-500 transition-colors">Liên hệ tư vấn</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Liên hệ</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-solar-500"></i>
+                            <span>Tòa nhà Innovation, Công viên phần mềm Quang Trung, Q.12, TP.HCM</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-solar-500"></i>
+                            <a href="tel:0333864000" class="font-bold text-white hover:text-solar-400 text-lg">0333.864.000</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-solar-500"></i>
+                            <a href="mailto:contact@muabandien.com" class="hover:text-solar-400 transition-colors">contact@muabandien.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>&copy; 2026 VN SOLAR (muabandien.com). All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="pages/dieu-khoan.html"   class="hover:text-white">Điều khoản</a>
+                    <a href="pages/bao-mat.html"       class="hover:text-white">Bảo mật</a>
+                    <a href="admin/login.html"         class="hover:text-white">Admin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ── LEAD MODAL ─────────────────────────────────── -->
+    <div id="leadModal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-dark/60 backdrop-blur-sm transition-opacity" onclick="closeModal()"></div>
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+            <div class="relative bg-white rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:max-w-lg w-full">
+                <div class="bg-gradient-to-r from-solar-600 to-solar-500 px-6 py-8 text-center relative">
+                    <button onclick="closeModal()" class="absolute top-4 right-4 text-white/70 hover:text-white text-2xl focus:outline-none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl backdrop-blur-md">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white mb-2">Nhận Tư Vấn Miễn Phí</h3>
+                    <p class="text-solar-50 text-sm">Kỹ sư VN Solar sẽ liên hệ trong 15 phút làm việc</p>
+                </div>
+                <div class="px-6 py-8">
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Họ tên / Tên Doanh nghiệp *</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-solar-500 focus:border-solar-500 outline-none transition-colors" placeholder="Nhập tên của bạn">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Số điện thoại *</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-solar-500 focus:border-solar-500 outline-none transition-colors" placeholder="09xx xxx xxx">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Bạn quan tâm đến?</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-solar-500 focus:border-solar-500 outline-none transition-colors bg-white">
+                                    <option>Điện mặt trời mái nhà (Gia đình)</option>
+                                    <option>Điện mặt trời cho Nhà xưởng / B2B</option>
+                                    <option>Lắp đặt Trạm sạc Ô tô điện</option>
+                                    <option>Mua biến tần / vật tư bán lẻ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <button type="submit" class="w-full bg-solar-600 hover:bg-solar-700 text-white font-bold py-4 px-4 rounded-xl shadow-lg shadow-solar-500/30 transition-transform transform hover:-translate-y-1">
+                                Yêu Cầu Khảo Sát Tận Nơi
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAB Buttons -->
+    <a href="tel:0333864000"                    class="fab-btn fab-phone" title="Gọi ngay"><i class="fa-solid fa-phone"></i></a>
+    <a href="https://zalo.me/0333864000" target="_blank" class="fab-btn fab-zalo"  title="Chat Zalo"><i class="fa-solid fa-comment-dots"></i></a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

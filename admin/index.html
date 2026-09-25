@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin – VN Solar</title>
+    <link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+</head>
+<body>
+<div class="admin-layout">
+
+    <!-- ── SIDEBAR ──────────────────────────────────── -->
+    <aside class="admin-sidebar">
+        <div class="brand">VN<span>SOLAR</span> <span style="font-size:.65rem;font-weight:400;color:#57606a;margin-left:4px">Admin</span></div>
+        <nav>
+            <div class="nav-section">Dashboard</div>
+            <a href="index.html" class="active"><i class="fa-solid fa-house-chimney fa-fw"></i> Tổng quan</a>
+            <div class="nav-section">Nội dung</div>
+            <a href="pages.html"><i class="fa-solid fa-file-lines fa-fw"></i> Quản lý trang</a>
+            <a href="leads.html"><i class="fa-solid fa-user-group fa-fw"></i> Danh sách leads</a>
+            <div class="nav-section">Cấu hình</div>
+            <a href="settings.html"><i class="fa-solid fa-gear fa-fw"></i> Cài đặt site</a>
+            <div style="flex:1"></div>
+            <div class="nav-section">Tài khoản</div>
+            <a href="../index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i> Xem trang chủ</a>
+            <a href="#" onclick="doLogout()"><i class="fa-solid fa-right-from-bracket fa-fw"></i> Đăng xuất</a>
+        </nav>
+    </aside>
+
+    <!-- ── MAIN ──────────────────────────────────────── -->
+    <main class="admin-main">
+        <div class="admin-topbar">
+            <div style="display:flex;align-items:center;gap:.75rem">
+                <button id="sidebarToggle" style="display:none;background:none;border:none;font-size:1.1rem;cursor:pointer;color:#57606a"><i class="fa-solid fa-bars"></i></button>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="topbar-actions">
+                <span style="font-size:.82rem;color:#57606a">Chào, <strong>Admin</strong></span>
+                <a href="../index.html" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Xem site</a>
+            </div>
+        </div>
+
+        <div class="admin-content">
+            <div id="adminAlert" class="alert"></div>
+
+            <!-- Stats -->
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Tổng trang</div>
+                    <div class="stat-value" id="statTotal">–</div>
+                    <div class="stat-sub">Đã tạo trong db</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Trang active</div>
+                    <div class="stat-value" style="color:#15803d" id="statActive">–</div>
+                    <div class="stat-sub">Đang hiển thị</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Bản nháp</div>
+                    <div class="stat-value" style="color:#854d0e" id="statDraft">–</div>
+                    <div class="stat-sub">Chưa xuất bản</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Leads nhận được</div>
+                    <div class="stat-value" style="color:#3b82d4" id="statLeads">–</div>
+                    <div class="stat-sub">Từ tất cả form</div>
+                </div>
+            </div>
+
+            <!-- Pages quick table -->
+            <div class="admin-panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-file-lines" style="color:#16a34a;margin-right:.4rem"></i> Trang & URL</h2>
+                    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+                        <input id="searchInput" type="text" placeholder="Tìm kiếm…" style="padding:.4rem .75rem;border:1.5px solid #e5e7eb;border-radius:.5rem;font-size:.85rem;outline:none;width:200px">
+                        <button class="btn btn-primary btn-sm" onclick="openNewPage()"><i class="fa-solid fa-plus"></i> Thêm trang</button>
+                        <button class="btn btn-secondary btn-sm" onclick="exportDB()"><i class="fa-solid fa-download"></i> Xuất db.json</button>
+                    </div>
+                </div>
+                <div style="overflow-x:auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tiêu đề / Mô tả</th>
+                                <th>Slug</th>
+                                <th>URL</th>
+                                <th>Trạng thái</th>
+                                <th>Cập nhật</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pagesBody">
+                            <tr><td colspan="6" style="text-align:center;padding:2rem;color:#aaa"><i class="fa-solid fa-spinner fa-spin"></i> Đang tải...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Recent leads -->
+            <div class="admin-panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-user-group" style="color:#3b82d4;margin-right:.4rem"></i> Leads gần nhất</h2>
+                    <div style="display:flex;gap:.5rem">
+                        <a href="leads.html" class="btn btn-secondary btn-sm">Xem tất cả</a>
+                        <button class="btn btn-danger btn-sm" onclick="clearLeads()">Xoá tất cả</button>
+                    </div>
+                </div>
+                <div style="overflow-x:auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Họ tên</th>
+                                <th>Số điện thoại</th>
+                                <th>Dịch vụ quan tâm</th>
+                                <th>Thời gian</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="leadsBody">
+                            <tr><td colspan="5" style="text-align:center;padding:2rem;color:#aaa">Chưa có leads.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Quick links -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem">
+                <a href="../pages/dien-mat-troi.html" target="_blank" class="btn btn-secondary" style="justify-content:center"><i class="fa-solid fa-solar-panel"></i> Điện mặt trời</a>
+                <a href="../pages/tru-sac.html" target="_blank" class="btn btn-secondary" style="justify-content:center"><i class="fa-solid fa-charging-station"></i> Trụ sạc</a>
+                <a href="../pages/dich-vu.html" target="_blank" class="btn btn-secondary" style="justify-content:center"><i class="fa-solid fa-handshake"></i> Dịch vụ</a>
+                <a href="../pages/tin-tuc.html" target="_blank" class="btn btn-secondary" style="justify-content:center"><i class="fa-solid fa-newspaper"></i> Tin tức</a>
+                <a href="../pages/lien-he.html" target="_blank" class="btn btn-secondary" style="justify-content:center"><i class="fa-solid fa-phone"></i> Liên hệ</a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- PAGE MODAL -->
+<div class="modal-overlay" id="pageModal">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3 id="modalTitle">Thêm / Sửa trang</h3>
+            <button onclick="closePageModal()" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:#57606a"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">
+            <form id="pageForm" onsubmit="savePageForm(event)">
+                <input type="hidden" id="editId">
+                <div class="form-group">
+                    <label class="form-label">Tiêu đề trang *</label>
+                    <input id="editTitle" class="form-input" type="text" placeholder="Ví dụ: Điện mặt trời" oninput="autoSlug()" required>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                    <div class="form-group">
+                        <label class="form-label">Slug *</label>
+                        <input id="editSlug" class="form-input" type="text" placeholder="dien-mat-troi" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Trạng thái</label>
+                        <select id="editStatus" class="form-select">
+                            <option value="active">Active</option>
+                            <option value="draft">Draft</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">URL (đường dẫn file) *</label>
+                    <input id="editUrl" class="form-input" type="text" placeholder="pages/dien-mat-troi.html" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Meta Title (SEO)</label>
+                    <input id="editMetaTitle" class="form-input" type="text" placeholder="Tiêu đề SEO">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Meta Description (SEO)</label>
+                    <textarea id="editMetaDesc" class="form-textarea" placeholder="Mô tả SEO (150 ký tự)" style="min-height:70px"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button onclick="closePageModal()" class="btn btn-secondary">Huỷ</button>
+            <button onclick="document.getElementById('pageForm').requestSubmit()" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Lưu</button>
+        </div>
+    </div>
+</div>
+
+<script src="../js/admin.js"></script>
+</body>
+</html>

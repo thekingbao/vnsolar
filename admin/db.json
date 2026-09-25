@@ -1,0 +1,234 @@
+{
+  "site": {
+    "name": "VN Solar",
+    "tagline": "Giải pháp Năng lượng mặt trời & Trạm sạc xe điện",
+    "phone": "0333.864.000",
+    "email": "contact@muabandien.com",
+    "address": "Tòa nhà Innovation, Công viên phần mềm Quang Trung, Q.12, TP.HCM",
+    "facebook": "https://facebook.com/vnsolar",
+    "youtube": "https://youtube.com/@vnsolar",
+    "zalo": "https://zalo.me/0333864000"
+  },
+  "pages": [
+    {
+      "id": "pg_home",
+      "title": "Trang chủ",
+      "slug": "trang-chu",
+      "url": "index.html",
+      "status": "active",
+      "meta_title": "VN Solar – Giải pháp Năng lượng mặt trời & Trạm sạc xe điện",
+      "meta_desc": "VN Solar cung cấp giải pháp điện mặt trời và trạm sạc xe điện thông minh B2B/B2C tại Việt Nam. Tiết kiệm 40-70% hóa đơn điện.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_dmt",
+      "title": "Điện mặt trời",
+      "slug": "dien-mat-troi",
+      "url": "pages/dien-mat-troi.html",
+      "status": "active",
+      "meta_title": "Điện mặt trời – Biến tần Hòa lưới & Hybrid | VN Solar",
+      "meta_desc": "Hệ thống điện mặt trời áp mái cho hộ gia đình, nhà xưởng, khách sạn. Biến tần DEYE, SOLIS chính hãng.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_bien-tan-hoa-luoi",
+      "title": "Biến tần Hòa lưới",
+      "slug": "bien-tan-hoa-luoi",
+      "url": "pages/bien-tan-hoa-luoi.html",
+      "status": "active",
+      "meta_title": "Biến tần Hòa lưới DEYE & SOLIS | VN Solar",
+      "meta_desc": "Biến tần hòa lưới 1 pha và 3 pha, công suất từ 3kW đến 100kW.",
+      "parent": "pg_dmt",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_bien-tan-hybrid",
+      "title": "Biến tần Hybrid",
+      "slug": "bien-tan-hybrid",
+      "url": "pages/bien-tan-hybrid.html",
+      "status": "active",
+      "meta_title": "Biến tần Hybrid – Lưu trữ điện thông minh | VN Solar",
+      "meta_desc": "Biến tần Hybrid kết hợp pin lưu trữ Lithium. Tự cấp điện ban đêm, hoạt động khi mất lưới.",
+      "parent": "pg_dmt",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_tam-pin",
+      "title": "Tấm pin Solar",
+      "slug": "tam-pin-solar",
+      "url": "pages/tam-pin-solar.html",
+      "status": "active",
+      "meta_title": "Tấm pin năng lượng mặt trời | VN Solar",
+      "meta_desc": "Tấm pin Mono PERC, TOPCon hiệu suất cao. Chứng nhận IEC, bảo hành 25 năm.",
+      "parent": "pg_dmt",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_pin-luu-tru",
+      "title": "Pin Lưu trữ",
+      "slug": "pin-luu-tru",
+      "url": "pages/pin-luu-tru.html",
+      "status": "active",
+      "meta_title": "Pin lưu trữ Lithium LiFePO4 | VN Solar",
+      "meta_desc": "Pin lưu trữ năng lượng mặt trời dòng Lithium LiFePO4, dung lượng 5kWh – 100kWh.",
+      "parent": "pg_dmt",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_tru-sac",
+      "title": "Trụ sạc ô tô điện",
+      "slug": "tru-sac-o-to-dien",
+      "url": "pages/tru-sac.html",
+      "status": "active",
+      "meta_title": "Trụ sạc ô tô điện DC & AC | VN Solar",
+      "meta_desc": "Trạm sạc nhanh DC 120kW/240kW và sạc AC thông minh cho bãi đỗ xe, khách sạn, trung tâm thương mại.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_tru-sac-dc",
+      "title": "Trụ sạc DC 120kW / 240kW",
+      "slug": "tru-sac-dc",
+      "url": "pages/tru-sac-dc.html",
+      "status": "active",
+      "meta_title": "Trụ sạc DC 120kW 240kW siêu nhanh | VN Solar",
+      "meta_desc": "Trụ sạc DC tốc độ cao 120kW và 240kW. Sạc đầy 80% pin xe điện trong 30 phút.",
+      "parent": "pg_tru-sac",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_tru-sac-ac",
+      "title": "Trụ sạc AC",
+      "slug": "tru-sac-ac",
+      "url": "pages/tru-sac-ac.html",
+      "status": "active",
+      "meta_title": "Trụ sạc AC thông minh cho nhà ở & văn phòng | VN Solar",
+      "meta_desc": "Trụ sạc AC 7kW/11kW/22kW phù hợp nhà ở, căn hộ, tòa văn phòng. Thanh toán app.",
+      "parent": "pg_tru-sac",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_dich-vu",
+      "title": "Dịch vụ",
+      "slug": "dich-vu",
+      "url": "pages/dich-vu.html",
+      "status": "active",
+      "meta_title": "Dịch vụ lắp đặt điện mặt trời thuê mua & trả chậm | VN Solar",
+      "meta_desc": "Điện mặt trời Thuê – Mua và mua trả chậm không lãi suất. Lắp đặt toàn quốc.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_thue-mua",
+      "title": "Điện mặt trời Thuê – Mua",
+      "slug": "thue-mua-dien-mat-troi",
+      "url": "pages/thue-mua.html",
+      "status": "active",
+      "meta_title": "Điện mặt trời Thuê – Mua (0 đồng vốn đầu tư) | VN Solar",
+      "meta_desc": "Lắp điện mặt trời không cần vốn, trả phí dùng điện hàng tháng thấp hơn EVN.",
+      "parent": "pg_dich-vu",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_tra-cham",
+      "title": "Mua trả chậm (0% lãi suất)",
+      "slug": "mua-tra-cham-0-lai",
+      "url": "pages/tra-cham.html",
+      "status": "active",
+      "meta_title": "Mua điện mặt trời trả góp 0% lãi suất | VN Solar",
+      "meta_desc": "Lắp điện mặt trời trả góp 0% lãi suất trong 12–24 tháng. Hoàn vốn nhanh.",
+      "parent": "pg_dich-vu",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_tin-tuc",
+      "title": "Tin tức & Kiến thức",
+      "slug": "tin-tuc",
+      "url": "pages/tin-tuc.html",
+      "status": "active",
+      "meta_title": "Tin tức năng lượng mặt trời & xe điện | VN Solar",
+      "meta_desc": "Cập nhật tin tức, chính sách năng lượng mặt trời, NĐ 135/2024 và xu hướng xe điện tại Việt Nam.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_lien-he",
+      "title": "Liên hệ",
+      "slug": "lien-he",
+      "url": "pages/lien-he.html",
+      "status": "active",
+      "meta_title": "Liên hệ VN Solar – Tư vấn miễn phí 24/7",
+      "meta_desc": "Liên hệ VN Solar để được tư vấn miễn phí về điện mặt trời và trạm sạc xe điện.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_chinh-sach-bh",
+      "title": "Chính sách bảo hành",
+      "slug": "chinh-sach-bao-hanh",
+      "url": "pages/chinh-sach-bao-hanh.html",
+      "status": "active",
+      "meta_title": "Chính sách bảo hành 10 năm | VN Solar",
+      "meta_desc": "VN Solar bảo hành thiết bị 10 năm, bảo trì định kỳ miễn phí 2 năm đầu.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_faq",
+      "title": "Câu hỏi thường gặp",
+      "slug": "cau-hoi-thuong-gap",
+      "url": "pages/faq.html",
+      "status": "active",
+      "meta_title": "FAQ – Câu hỏi thường gặp về điện mặt trời | VN Solar",
+      "meta_desc": "Giải đáp mọi thắc mắc về lắp đặt, đầu tư, chính sách và công nghệ điện mặt trời.",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_dieu-khoan",
+      "title": "Điều khoản sử dụng",
+      "slug": "dieu-khoan-su-dung",
+      "url": "pages/dieu-khoan.html",
+      "status": "active",
+      "meta_title": "Điều khoản sử dụng | VN Solar",
+      "meta_desc": "",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "id": "pg_bao-mat",
+      "title": "Chính sách bảo mật",
+      "slug": "chinh-sach-bao-mat",
+      "url": "pages/bao-mat.html",
+      "status": "active",
+      "meta_title": "Chính sách bảo mật | VN Solar",
+      "meta_desc": "",
+      "created_at": "2025-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-25T00:00:00.000Z"
+    }
+  ],
+  "products": [
+    { "id": "pr_deye6kw",   "name": "DEYE Hybrid 6kW 1P",  "brand": "DEYE",  "type": "inverter-hybrid", "tag": "BÁN CHẠY" },
+    { "id": "pr_deye10kw",  "name": "DEYE Hybrid 10kW 3P", "brand": "DEYE",  "type": "inverter-hybrid" },
+    { "id": "pr_solis6kw",  "name": "SOLIS Hybrid 6kW",    "brand": "SOLIS", "type": "inverter-hybrid" },
+    { "id": "pr_solis10kw", "name": "SOLIS Hybrid 10kW 3P","brand": "SOLIS", "type": "inverter-hybrid" }
+  ],
+  "settings": {
+    "phone":        "0333.864.000",
+    "zalo":         "https://zalo.me/0333864000",
+    "email":        "contact@muabandien.com",
+    "google_tag":   "",
+    "fb_pixel":     "",
+    "maintenance":  false
+  }
+}

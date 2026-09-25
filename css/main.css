@@ -1,0 +1,127 @@
+/* VN Solar – Main Stylesheet
+   Extends Tailwind with custom utilities shared across all pages */
+
+/* ── Scrollbar hide (marquee) ─────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Hero background pattern ──────────────────────── */
+.hero-pattern {
+    background-color: #0f172a;
+    background-image: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+}
+
+/* ── Marquee animation ────────────────────────────── */
+@keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+.animate-marquee { animation: marquee 25s linear infinite; }
+
+/* ── Page transition fade ─────────────────────────── */
+.page-fade { animation: pageFadeIn 0.4s ease; }
+@keyframes pageFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Sticky navbar shadow on scroll ──────────────── */
+#navbar.scrolled { box-shadow: 0 4px 24px 0 rgba(0,0,0,.07); }
+
+/* ── Product card image hover ─────────────────────── */
+.product-card img { transition: transform .5s ease; }
+.product-card:hover img { transform: scale(1.05); }
+
+/* ── Admin table ──────────────────────────────────── */
+.admin-table th {
+    background: #f7f8fa;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #57606a;
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+.admin-table td {
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: .875rem;
+    color: #1f2328;
+    vertical-align: middle;
+}
+.admin-table tr:hover td { background: #f7f8fa; }
+
+/* ── Status badge ─────────────────────────────────── */
+.badge-active   { background:#dcfce7; color:#15803d; }
+.badge-draft    { background:#fef9c3; color:#854d0e; }
+.badge-inactive { background:#f3f4f6; color:#6b7280; }
+.badge {
+    display: inline-block;
+    padding: .15rem .65rem;
+    border-radius: 9999px;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+/* ── Form focus ring ──────────────────────────────── */
+.vns-input {
+    width: 100%;
+    padding: .6rem 1rem;
+    border: 1.5px solid #e5e7eb;
+    border-radius: .75rem;
+    outline: none;
+    transition: border-color .2s;
+    font-size: .9rem;
+}
+.vns-input:focus { border-color: #16a34a; box-shadow: 0 0 0 3px rgba(22,163,74,.15); }
+
+/* ── Breadcrumb ───────────────────────────────────── */
+.breadcrumb { display: flex; flex-wrap: wrap; gap: .25rem .5rem; font-size:.85rem; color:#57606a; }
+.breadcrumb a { color:#16a34a; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span { color:#bbb; }
+
+/* ── Section title underline ──────────────────────── */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: #16a34a;
+    border-radius: 2px;
+    margin: .5rem auto 0;
+}
+
+/* ── Mobile bottom CTA bar ────────────────────────── */
+.mobile-cta-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 80;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+    padding: .5rem 1rem;
+    gap: .5rem;
+}
+@media (min-width: 768px) { .mobile-cta-bar { display: none; } }
+
+/* ── Floating WhatsApp / Phone button ─────────────── */
+.fab-btn {
+    position: fixed;
+    bottom: 5rem;
+    right: 1.25rem;
+    z-index: 90;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,.18);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform .2s;
+}
+.fab-btn:hover { transform: scale(1.1); }
+.fab-phone { background: #16a34a; bottom: 9rem; }
+.fab-zalo  { background: #0068ff; bottom: 5rem; }
+@media (min-width: 768px) { .fab-btn { bottom: 2rem; } .fab-phone { bottom: 5.5rem; } .fab-zalo { bottom: 2rem; } }
