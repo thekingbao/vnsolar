@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 – Trang không tìm thấy | NLP Group</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{solar:{50:'#f0fdf4',100:'#dcfce7',500:'#22c55e',600:'#16a34a',700:'#15803d',900:'#14532d'},dark:'#0f172a'}}}}</script>
+    <style>
+        body { min-height: 100vh; display: flex; flex-direction: column; }
+        .countdown { font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-dark text-white flex flex-col">
+
+    <!-- Minimal Navbar -->
+    <nav class="w-full px-6 py-5 flex items-center justify-between border-b border-white/10">
+        <a href="index.html" class="text-xl font-black tracking-tighter">NLP <span class="text-solar-500">GROUP</span></a>
+        <a href="index.html" class="text-sm text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors">
+            <i class="fa-solid fa-arrow-left text-xs"></i> Về trang chủ
+        </a>
+    </nav>
+
+    <!-- 404 Content -->
+    <main class="flex-1 flex items-center justify-center px-4 py-20">
+        <div class="text-center max-w-xl">
+            <!-- Big 404 -->
+            <div class="relative inline-block mb-8">
+                <div class="text-[10rem] font-black leading-none text-white/5 select-none">404</div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-24 h-24 rounded-full bg-solar-600/20 border border-solar-500/30 flex items-center justify-center text-solar-400 text-4xl">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-3xl md:text-4xl font-black text-white mb-4">
+                Trang này không tồn tại
+            </h1>
+            <p class="text-gray-400 text-lg mb-3 leading-relaxed">
+                Đường dẫn bạn truy cập không tìm thấy hoặc đã được di chuyển.<br>
+                Bạn sẽ được chuyển về trang chủ sau <span class="countdown font-bold text-solar-400" id="counter">5</span> giây.
+            </p>
+
+            <!-- Quick links -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 mt-8">
+                <a href="pages/dien-mat-troi/" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-3 text-center transition-all group">
+                    <i class="fa-solid fa-solar-panel text-solar-400 text-xl mb-1.5 block group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs text-gray-300 font-medium">Điện mặt trời</span>
+                </a>
+                <a href="pages/tru-sac/" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-3 text-center transition-all group">
+                    <i class="fa-solid fa-charging-station text-purple-400 text-xl mb-1.5 block group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs text-gray-300 font-medium">Trụ sạc ô tô</span>
+                </a>
+                <a href="pages/dich-vu/" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-3 text-center transition-all group">
+                    <i class="fa-solid fa-handshake text-blue-400 text-xl mb-1.5 block group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs text-gray-300 font-medium">Dịch vụ</span>
+                </a>
+                <a href="pages/lien-he/" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-3 text-center transition-all group">
+                    <i class="fa-solid fa-phone text-solar-400 text-xl mb-1.5 block group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs text-gray-300 font-medium">Liên hệ</span>
+                </a>
+            </div>
+
+            <a href="index.html" class="inline-flex items-center gap-2 bg-solar-600 hover:bg-solar-700 text-white px-8 py-3.5 rounded-xl font-bold transition-colors shadow-lg shadow-solar-500/20">
+                <i class="fa-solid fa-house"></i> Về trang chủ ngay
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer minimal -->
+    <footer class="border-t border-white/10 py-6 text-center text-xs text-gray-600">
+        &copy; 2026 NLP GROUP (muabandien.com). All rights reserved.
+    </footer>
+
+    <script>
+        // Auto-redirect countdown
+        let n = 5;
+        const el = document.getElementById('counter');
+        const timer = setInterval(() => {
+            n--;
+            el.textContent = n;
+            if (n <= 0) {
+                clearInterval(timer);
+                window.location.replace('index.html');
+            }
+        }, 1000);
+
+        // Cancel redirect on any user interaction
+        document.addEventListener('click', () => clearInterval(timer), { once: true });
+        document.addEventListener('keydown', () => clearInterval(timer), { once: true });
+    </script>
+</body>
+</html>
