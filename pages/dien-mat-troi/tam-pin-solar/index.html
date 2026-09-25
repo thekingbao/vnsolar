@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tấm pin Solar Mono PERC &amp; TOPCon | NLP Group</title>
+    <meta name="description" content="Tấm pin Solar Mono PERC và TOPCon chính hãng Jinko, LONGi, Canadian, Risen. Hiệu suất cao, bảo hành 25 năm. Tư vấn chọn tấm pin phù hợp.">
+    <link rel="icon" type="image/x-icon" href="../../../favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../../../favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="../../../favicon_io/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        solar: { 50:'#f0fdf4', 100:'#dcfce7', 500:'#22c55e', 600:'#16a34a', 700:'#15803d', 900:'#14532d' },
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100" id="navbar">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+      <a href="../../../index.html" class="text-2xl font-black text-dark tracking-tighter">NLP <span class="text-solar-600">GROUP</span></a>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="../../../index.html#gioi-thieu" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Giới thiệu</a>
+        <a href="../index.html" class="text-sm font-semibold text-solar-600 border-b-2 border-solar-500 pb-0.5">Điện mặt trời</a>
+        <a href="../../tru-sac/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Trụ sạc</a>
+        <a href="../../dich-vu/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Dịch vụ</a>
+        <a href="../../tin-tuc/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Tin tức</a>
+        <a href="../../lien-he/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Liên hệ</a>
+      </div>
+      <button onclick="openModal()" class="hidden md:flex bg-solar-600 hover:bg-solar-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm items-center gap-2 shadow-lg shadow-solar-500/30"><i class="fa-solid fa-phone-volume"></i> Tư vấn ngay</button>
+      <button id="mobile-menu-btn" class="md:hidden text-gray-600 p-2"><i class="fa-solid fa-bars text-2xl"></i></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+    <div class="px-4 pt-2 pb-6 space-y-1">
+      <a href="../../../index.html" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Trang chủ</a>
+      <a href="../index.html" class="block px-3 py-3 text-base font-medium text-solar-600 bg-solar-50 rounded-lg">Điện mặt trời</a>
+      <a href="../../tru-sac/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Trụ sạc</a>
+      <a href="../../dich-vu/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Dịch vụ</a>
+      <a href="../../tin-tuc/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Tin tức</a>
+      <a href="../../lien-he/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Liên hệ</a>
+      <button onclick="openModal()" class="mt-3 w-full bg-solar-600 text-white px-4 py-3 rounded-xl font-semibold flex justify-center items-center gap-2"><i class="fa-solid fa-phone"></i> Gọi: 0333.864.000</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 bg-gradient-to-br from-yellow-900 via-amber-900 to-dark relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop" class="w-full h-full object-cover"></div>
+  <div class="absolute top-10 right-20 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl opacity-15"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <nav class="flex items-center gap-2 text-sm mb-6 text-white/60">
+      <a href="../../../index.html" class="hover:text-yellow-300 transition-colors">Trang chủ</a>
+      <span>/</span>
+      <a href="../index.html" class="hover:text-yellow-300 transition-colors">Điện mặt trời</a>
+      <span>/</span>
+      <span class="text-yellow-300 font-semibold">Tấm pin Solar</span>
+    </nav>
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-600/20 border border-yellow-400/30 mb-6">
+        <i class="fa-solid fa-solar-panel text-yellow-300 text-xs"></i>
+        <span class="text-xs font-semibold text-yellow-200 uppercase tracking-wide">Mono PERC & TOPCon – Hiệu suất cao nhất</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-black text-white mb-5 leading-tight">Tấm pin Solar<br><span class="text-yellow-300">Mono PERC &amp; TOPCon</span></h1>
+      <p class="text-lg text-gray-300 mb-8 leading-relaxed">Jinko, LONGi, Canadian, Risen – thương hiệu hàng đầu thế giới.<br class="hidden md:block"> Hiệu suất 21–23%, bảo hành công suất 25 năm.</p>
+      <div class="flex flex-wrap gap-4">
+        <button onclick="openModal()" class="bg-yellow-600 hover:bg-yellow-500 text-white px-7 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-yellow-500/40 flex items-center gap-2"><i class="fa-solid fa-phone-volume"></i> Nhận báo giá ngay</button>
+        <a href="#cong-nghe" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-7 py-3.5 rounded-xl font-bold transition-all backdrop-blur-md flex items-center gap-2"><i class="fa-solid fa-microchip"></i> So sánh công nghệ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: CÔNG NGHỆ -->
+<section class="py-16 bg-white" id="cong-nghe">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-black text-dark mb-3">Mono PERC vs TOPCon</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Hai công nghệ tấm pin tiên tiến nhất hiện nay – chọn đúng theo ngân sách và mục tiêu.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Mono PERC -->
+      <div class="bg-amber-50 rounded-2xl p-8 border border-amber-200 hover:shadow-md transition-shadow">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-solar-panel text-amber-600 text-2xl"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-amber-600 uppercase tracking-wider">Công nghệ tiêu chuẩn vàng</div>
+            <h3 class="text-xl font-black text-dark">Mono PERC</h3>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex justify-between items-center py-2 border-b border-amber-100">
+            <span class="text-sm text-gray-600 font-medium">Hiệu suất</span>
+            <span class="font-bold text-dark">20.5 – 21.5%</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-amber-100">
+            <span class="text-sm text-gray-600 font-medium">Mức giá</span>
+            <span class="font-bold text-amber-600">Cạnh tranh</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-amber-100">
+            <span class="text-sm text-gray-600 font-medium">Tuổi thọ</span>
+            <span class="font-bold text-dark">25+ năm</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-sm text-gray-600 font-medium">Phù hợp</span>
+            <span class="font-bold text-dark">Gia đình, hộ KD</span>
+          </div>
+        </div>
+        <div class="bg-amber-100 rounded-xl p-4">
+          <p class="text-sm text-amber-800 leading-relaxed"><strong>Lý tưởng khi:</strong> ngân sách tối ưu, mái nhà đủ diện tích, không cần hiệu suất tối đa trên mỗi m².</p>
+        </div>
+      </div>
+      <!-- TOPCon -->
+      <div class="bg-blue-50 rounded-2xl p-8 border border-blue-200 hover:shadow-md transition-shadow relative overflow-hidden">
+        <div class="absolute top-4 right-4">
+          <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">⚡ Tiên tiến nhất</span>
+        </div>
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-atom text-blue-600 text-2xl"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-blue-600 uppercase tracking-wider">Công nghệ thế hệ mới</div>
+            <h3 class="text-xl font-black text-dark">TOPCon</h3>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex justify-between items-center py-2 border-b border-blue-100">
+            <span class="text-sm text-gray-600 font-medium">Hiệu suất</span>
+            <span class="font-bold text-dark">22 – 23.5%</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-blue-100">
+            <span class="text-sm text-gray-600 font-medium">Mức giá</span>
+            <span class="font-bold text-blue-600">Cao hơn 10–15%</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-blue-100">
+            <span class="text-sm text-gray-600 font-medium">Tuổi thọ</span>
+            <span class="font-bold text-dark">30+ năm</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-sm text-gray-600 font-medium">Phù hợp</span>
+            <span class="font-bold text-dark">Mái chật, nhà máy</span>
+          </div>
+        </div>
+        <div class="bg-blue-100 rounded-xl p-4">
+          <p class="text-sm text-blue-800 leading-relaxed"><strong>Lý tưởng khi:</strong> diện tích mái hạn chế, cần tối đa kWh/m², hoặc đầu tư dài hạn 25+ năm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: SẢN PHẨM -->
+<section class="py-16 bg-gray-50" id="san-pham">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-black text-dark mb-3">Tấm pin Solar chính hãng</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Jinko, LONGi, Canadian, Risen – Top 4 nhà sản xuất lớn nhất thế giới, phân phối chính thức tại Việt Nam.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Jinko 580W -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
+        <div class="bg-gray-100 flex items-center justify-center h-44">
+          <img src="https://placehold.co/400x400/fefce8/92400e?text=Jinko+580W" alt="Jinko 580W TOPCon" class="h-40 object-contain">
+        </div>
+        <div class="p-5">
+          <div class="text-xs font-bold text-yellow-700 uppercase tracking-wider mb-1">JINKO SOLAR</div>
+          <h4 class="font-bold text-dark mb-3 text-sm leading-snug">Tiger Neo 580W TOPCon</h4>
+          <div class="space-y-1.5 mb-4 text-xs text-gray-600">
+            <div class="flex justify-between"><span>Công suất</span><span class="font-semibold text-dark">580 Wp</span></div>
+            <div class="flex justify-between"><span>Hiệu suất</span><span class="font-semibold text-dark">22.38%</span></div>
+            <div class="flex justify-between"><span>Bảo hành SP</span><span class="font-semibold text-dark">12 năm</span></div>
+            <div class="flex justify-between"><span>Kích thước</span><span class="font-semibold text-dark">2278×1134mm</span></div>
+          </div>
+          <button onclick="openModal()" class="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors">Nhận báo giá</button>
+        </div>
+      </div>
+      <!-- LONGi 610W -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
+        <div class="bg-gray-100 flex items-center justify-center h-44">
+          <img src="https://placehold.co/400x400/fefce8/92400e?text=LONGi+610W" alt="LONGi Hi-MO6 610W" class="h-40 object-contain">
+        </div>
+        <div class="p-5">
+          <div class="text-xs font-bold text-red-700 uppercase tracking-wider mb-1">LONGi SOLAR</div>
+          <h4 class="font-bold text-dark mb-3 text-sm leading-snug">Hi-MO6 610W TOPCon</h4>
+          <div class="space-y-1.5 mb-4 text-xs text-gray-600">
+            <div class="flex justify-between"><span>Công suất</span><span class="font-semibold text-dark">610 Wp</span></div>
+            <div class="flex justify-between"><span>Hiệu suất</span><span class="font-semibold text-dark">23.10%</span></div>
+            <div class="flex justify-between"><span>Bảo hành SP</span><span class="font-semibold text-dark">15 năm</span></div>
+            <div class="flex justify-between"><span>Kích thước</span><span class="font-semibold text-dark">2384×1303mm</span></div>
+          </div>
+          <button onclick="openModal()" class="w-full bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors">Nhận báo giá</button>
+        </div>
+      </div>
+      <!-- Canadian 550W -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
+        <div class="bg-gray-100 flex items-center justify-center h-44">
+          <img src="https://placehold.co/400x400/fefce8/92400e?text=Canadian+550W" alt="Canadian Solar 550W PERC" class="h-40 object-contain">
+        </div>
+        <div class="p-5">
+          <div class="text-xs font-bold text-orange-700 uppercase tracking-wider mb-1">CANADIAN SOLAR</div>
+          <h4 class="font-bold text-dark mb-3 text-sm leading-snug">HiKu7 550W Mono PERC</h4>
+          <div class="space-y-1.5 mb-4 text-xs text-gray-600">
+            <div class="flex justify-between"><span>Công suất</span><span class="font-semibold text-dark">550 Wp</span></div>
+            <div class="flex justify-between"><span>Hiệu suất</span><span class="font-semibold text-dark">21.20%</span></div>
+            <div class="flex justify-between"><span>Bảo hành SP</span><span class="font-semibold text-dark">12 năm</span></div>
+            <div class="flex justify-between"><span>Kích thước</span><span class="font-semibold text-dark">2256×1133mm</span></div>
+          </div>
+          <button onclick="openModal()" class="w-full bg-orange-600 hover:bg-orange-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors">Nhận báo giá</button>
+        </div>
+      </div>
+      <!-- Risen 600W -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
+        <div class="bg-gray-100 flex items-center justify-center h-44">
+          <img src="https://placehold.co/400x400/fefce8/92400e?text=Risen+600W" alt="Risen Energy 600W" class="h-40 object-contain">
+        </div>
+        <div class="p-5">
+          <div class="text-xs font-bold text-solar-700 uppercase tracking-wider mb-1">RISEN ENERGY</div>
+          <h4 class="font-bold text-dark mb-3 text-sm leading-snug">RSM144-10 600W TOPCon</h4>
+          <div class="space-y-1.5 mb-4 text-xs text-gray-600">
+            <div class="flex justify-between"><span>Công suất</span><span class="font-semibold text-dark">600 Wp</span></div>
+            <div class="flex justify-between"><span>Hiệu suất</span><span class="font-semibold text-dark">22.60%</span></div>
+            <div class="flex justify-between"><span>Bảo hành SP</span><span class="font-semibold text-dark">12 năm</span></div>
+            <div class="flex justify-between"><span>Kích thước</span><span class="font-semibold text-dark">2260×1134mm</span></div>
+          </div>
+          <button onclick="openModal()" class="w-full bg-solar-600 hover:bg-solar-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors">Nhận báo giá</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: HƯỚNG DẪN CHỌN -->
+<section class="py-16 bg-white" id="huong-dan">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-black text-dark mb-3">Hướng dẫn chọn tấm pin</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">3 yếu tố chính giúp bạn chọn đúng tấm pin phù hợp nhất.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-amber-50 rounded-2xl p-7 border border-amber-100 hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+          <i class="fa-solid fa-ruler-combined text-amber-600 text-xl"></i>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-3">1. Diện tích mái</h3>
+        <div class="space-y-2 text-sm text-gray-600">
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Mái &lt;50m²: Dùng TOPCon để tối đa công suất trên diện tích nhỏ.</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Mái 50–150m²: PERC hoặc TOPCon đều phù hợp.</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Mái &gt;150m²: PERC tiết kiệm chi phí tốt hơn.</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-solar-50 rounded-2xl p-7 border border-solar-100 hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-solar-100 rounded-xl flex items-center justify-center mb-4">
+          <i class="fa-solid fa-bolt text-solar-600 text-xl"></i>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-3">2. Công suất cần lắp</h3>
+        <div class="space-y-2 text-sm text-gray-600">
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Dưới 5kWp: Hộ gia đình – 550–580W/tấm, ~9–10 tấm.</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>5–20kWp: Hộ kinh doanh – tấm 580–610W.</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Trên 20kWp: Nhà máy – tấm 600W+, nhiều chuỗi MPPT.</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-blue-50 rounded-2xl p-7 border border-blue-100 hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+          <i class="fa-solid fa-wallet text-blue-600 text-xl"></i>
+        </div>
+        <h3 class="text-lg font-bold text-dark mb-3">3. Ngân sách</h3>
+        <div class="space-y-2 text-sm text-gray-600">
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Tối ưu chi phí: Canadian HiKu7 PERC – giá thấp, chất lượng ổn định.</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Cân bằng: Jinko Tiger Neo – giá/hiệu suất tốt nhất.</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-solar-500 mt-0.5 flex-shrink-0"></i>
+            <span>Đầu tư cao: LONGi Hi-MO6 – hiệu suất đỉnh, bảo hành dài.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-gradient-to-br from-yellow-900 via-amber-900 to-dark">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-black text-white mb-4">Không chắc chọn tấm pin nào?</h2>
+    <p class="text-gray-300 mb-8 text-lg">Kỹ sư NLP tư vấn miễn phí – đề xuất đúng tấm pin theo mái nhà và ngân sách của bạn.</p>
+    <button onclick="openModal()" class="bg-yellow-600 hover:bg-yellow-500 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-yellow-500/40 inline-flex items-center gap-3">
+      <i class="fa-solid fa-comments"></i> Nhận tư vấn miễn phí
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-gray-400 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+      <div>
+        <div class="text-2xl font-black text-white tracking-tighter mb-3">NLP <span class="text-solar-500">GROUP</span></div>
+        <p class="text-sm leading-relaxed mb-4">Giải pháp năng lượng mặt trời &amp; trạm sạc xe điện thông minh. Phân phối chính hãng toàn quốc.</p>
+        <p class="text-xs text-gray-500">muabandien.com</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Điện mặt trời</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="../../dien-mat-troi/" class="hover:text-solar-400 transition-colors">Tổng quan</a></li>
+          <li><a href="../bien-tan-hybrid/" class="hover:text-solar-400 transition-colors">Biến tần Hybrid</a></li>
+          <li><a href="../bien-tan-hoa-luoi/" class="hover:text-solar-400 transition-colors">Biến tần Hòa lưới</a></li>
+          <li><a href="../tam-pin-solar/" class="hover:text-solar-400 transition-colors">Tấm pin Solar</a></li>
+          <li><a href="../pin-luu-tru/" class="hover:text-solar-400 transition-colors">Pin Lưu trữ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Dịch vụ</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="../../tru-sac/" class="hover:text-solar-400 transition-colors">Trụ sạc xe điện</a></li>
+          <li><a href="../../dich-vu/" class="hover:text-solar-400 transition-colors">Dịch vụ lắp đặt</a></li>
+          <li><a href="../../tin-tuc/" class="hover:text-solar-400 transition-colors">Tin tức</a></li>
+          <li><a href="../../lien-he/" class="hover:text-solar-400 transition-colors">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Pháp lý</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="../../dieu-khoan/" class="hover:text-solar-400 transition-colors">Điều khoản sử dụng</a></li>
+          <li><a href="../../bao-mat/" class="hover:text-solar-400 transition-colors">Chính sách bảo mật</a></li>
+        </ul>
+        <div class="mt-5 flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-solar-600 flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-solar-600 flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube text-sm"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-solar-600 flex items-center justify-center transition-colors"><i class="fa-brands fa-tiktok text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 text-center text-xs text-gray-500">
+      © 2026 NLP GROUP (muabandien.com) – Bảo lưu mọi quyền.
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL TƯ VẤN -->
+<div id="leadModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm hidden">
+  <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md mx-4 p-8 relative">
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"><i class="fa-solid fa-times text-xl"></i></button>
+    <h3 class="text-xl font-black text-dark mb-1">Nhận tư vấn miễn phí</h3>
+    <p class="text-gray-500 text-sm mb-6">Chuyên gia NLP sẽ liên hệ trong vòng 30 phút.</p>
+    <form onsubmit="submitForm(event)" class="space-y-4">
+      <input type="text" placeholder="Họ và tên *" required class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-100">
+      <input type="tel" placeholder="Số điện thoại *" required class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-100">
+      <input type="text" placeholder="Tỉnh / Thành phố" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-100">
+      <textarea rows="3" placeholder="Nhu cầu của bạn (tuỳ chọn)" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-100 resize-none"></textarea>
+      <button type="submit" class="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3.5 rounded-xl font-bold transition-colors flex items-center justify-center gap-2"><i class="fa-solid fa-paper-plane"></i> Gửi yêu cầu</button>
+    </form>
+  </div>
+</div>
+
+<!-- FAB -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+  <a href="tel:0333864000" class="fab-btn fab-phone w-14 h-14 bg-solar-600 hover:bg-solar-700 text-white rounded-full flex items-center justify-center shadow-lg shadow-solar-500/40 transition-all hover:scale-110" title="Gọi ngay">
+    <i class="fa-solid fa-phone text-xl"></i>
+  </a>
+  <a href="https://zalo.me/0333864000" target="_blank" rel="noopener" class="fab-btn fab-zalo w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg shadow-blue-500/40 transition-all hover:scale-110" title="Chat Zalo">
+    <span class="font-black text-sm tracking-tighter">Zalo</span>
+  </a>
+</div>
+
+<script src="../../../js/main.js"></script>
+<script>
+  document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

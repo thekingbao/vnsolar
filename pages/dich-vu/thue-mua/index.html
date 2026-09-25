@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điện mặt trời Thuê – Mua (0 đồng vốn đầu tư) | NLP Group</title>
+    <meta name="description" content="Mô hình Thuê – Mua Solar: NLP Group đầu tư 100%, bạn trả tiền điện thấp hơn EVN. Nhận hệ thống miễn phí sau 7–10 năm. Phù hợp NĐ 135/2024.">
+    <link rel="icon" type="image/x-icon" href="../../../favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../../../favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="../../../favicon_io/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        solar: { 50:'#f0fdf4',100:'#dcfce7',500:'#22c55e',600:'#16a34a',700:'#15803d',900:'#14532d' },
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+      <a href="../../../index.html" class="text-2xl font-black text-dark tracking-tighter">NLP <span class="text-solar-600">GROUP</span></a>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="../../../index.html#gioi-thieu" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Giới thiệu</a>
+        <a href="../../dien-mat-troi/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Điện mặt trời</a>
+        <a href="../../tru-sac/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Trụ sạc</a>
+        <a href="../index.html" class="text-sm font-semibold text-solar-600 border-b-2 border-solar-500 pb-0.5">Dịch vụ</a>
+        <a href="../../tin-tuc/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Tin tức</a>
+        <a href="../../lien-he/" class="text-sm font-semibold text-gray-600 hover:text-solar-600">Liên hệ</a>
+      </div>
+      <button onclick="openModal()" class="hidden md:flex bg-solar-600 hover:bg-solar-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm items-center gap-2 shadow-lg shadow-solar-500/30"><i class="fa-solid fa-phone-volume"></i> Tư vấn ngay</button>
+      <button id="mobile-menu-btn" class="md:hidden text-gray-600 p-2"><i class="fa-solid fa-bars text-2xl"></i></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+    <div class="px-4 pt-2 pb-6 space-y-1">
+      <a href="../../../index.html" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Trang chủ</a>
+      <a href="../../dien-mat-troi/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Điện mặt trời</a>
+      <a href="../../tru-sac/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Trụ sạc</a>
+      <a href="../index.html" class="block px-3 py-3 text-base font-medium text-solar-600 bg-solar-50 rounded-lg">Dịch vụ</a>
+      <a href="../../tin-tuc/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Tin tức</a>
+      <a href="../../lien-he/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-solar-50 rounded-lg">Liên hệ</a>
+      <button onclick="openModal()" class="mt-3 w-full bg-solar-600 text-white px-4 py-3 rounded-xl font-semibold flex justify-center items-center gap-2"><i class="fa-solid fa-phone"></i> Gọi: 0333.864.000</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 bg-gradient-to-br from-gray-900 via-green-950 to-dark relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-20 left-10 w-96 h-96 bg-green-500 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-solar-700 rounded-full blur-3xl"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <nav class="mb-6 flex items-center gap-2 text-sm">
+      <a href="../../../index.html" class="text-white/70 hover:text-white transition-colors">Trang chủ</a>
+      <i class="fa-solid fa-chevron-right text-white/40 text-xs"></i>
+      <a href="../index.html" class="text-white/70 hover:text-white transition-colors">Dịch vụ</a>
+      <i class="fa-solid fa-chevron-right text-white/40 text-xs"></i>
+      <span class="text-solar-400 font-semibold">Thuê – Mua</span>
+    </nav>
+    <div class="inline-flex items-center gap-2 bg-solar-500/20 border border-solar-400/30 text-solar-300 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
+      <i class="fa-solid fa-star"></i> 0 ĐỒNG VỐN ĐẦU TƯ – TIẾT KIỆM NGAY
+    </div>
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+      Thuê – Mua Solar:<br><span class="text-solar-400">0 đồng vốn đầu tư</span>
+    </h1>
+    <p class="text-lg text-gray-300 max-w-2xl mb-10">NLP Group đầu tư toàn bộ hệ thống solar. Bạn chỉ trả tiền điện thấp hơn EVN 10–30%. Nhận hệ thống miễn phí sau 7–10 năm hợp đồng.</p>
+    <div class="flex flex-wrap gap-4">
+      <div class="bg-white/10 backdrop-blur rounded-xl px-5 py-3 border border-white/20"><div class="text-2xl font-black text-solar-400">0đ</div><div class="text-xs text-gray-400 uppercase font-semibold mt-0.5">Vốn đầu tư ban đầu</div></div>
+      <div class="bg-white/10 backdrop-blur rounded-xl px-5 py-3 border border-white/20"><div class="text-2xl font-black text-solar-400">-30%</div><div class="text-xs text-gray-400 uppercase font-semibold mt-0.5">Tiết kiệm so với EVN</div></div>
+      <div class="bg-white/10 backdrop-blur rounded-xl px-5 py-3 border border-white/20"><div class="text-2xl font-black text-solar-400">7–10 năm</div><div class="text-xs text-gray-400 uppercase font-semibold mt-0.5">Nhận hệ thống miễn phí</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: MÔ HÌNH HOẠT ĐỘNG -->
+<section class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-solar-600 font-bold uppercase tracking-wider text-sm mb-3">Mô hình hoạt động</p>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">4 giai đoạn đơn giản</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Từ ký hợp đồng đến nhận hệ thống miễn phí — rõ ràng, minh bạch từng bước.</p>
+    </div>
+    <div class="relative">
+      <!-- vertical timeline line -->
+      <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-solar-100 hidden md:block" style="left:2rem"></div>
+      <div class="space-y-10">
+        <!-- Bước 1 -->
+        <div class="flex gap-8 items-start relative">
+          <div class="shrink-0 w-16 h-16 bg-solar-600 text-white rounded-full flex items-center justify-center text-2xl shadow-lg shadow-solar-500/30 relative z-10">
+            <i class="fa-solid fa-file-signature"></i>
+          </div>
+          <div class="flex-1 bg-solar-50 rounded-2xl p-6 border border-solar-100 hover:border-solar-300 hover:shadow-lg transition-all duration-300">
+            <div class="inline-flex items-center gap-2 bg-solar-100 text-solar-700 px-3 py-1 rounded-full text-xs font-bold mb-3">GIAI ĐOẠN 1</div>
+            <h3 class="text-xl font-black text-gray-900 mb-2">Ký hợp đồng</h3>
+            <p class="text-gray-600 leading-relaxed">Hợp đồng Thuê – Mua minh bạch, tuân thủ NĐ 135/2024/NĐ-CP. Ghi rõ giá điện, thời hạn, quyền sở hữu và điều khoản chuyển giao hệ thống.</p>
+          </div>
+        </div>
+        <!-- Bước 2 -->
+        <div class="flex gap-8 items-start relative">
+          <div class="shrink-0 w-16 h-16 bg-solar-600 text-white rounded-full flex items-center justify-center text-2xl shadow-lg shadow-solar-500/30 relative z-10">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="flex-1 bg-solar-50 rounded-2xl p-6 border border-solar-100 hover:border-solar-300 hover:shadow-lg transition-all duration-300">
+            <div class="inline-flex items-center gap-2 bg-solar-100 text-solar-700 px-3 py-1 rounded-full text-xs font-bold mb-3">GIAI ĐOẠN 2</div>
+            <h3 class="text-xl font-black text-gray-900 mb-2">Lắp đặt miễn phí</h3>
+            <p class="text-gray-600 leading-relaxed">NLP Group đầu tư 100% chi phí: tấm pin, biến tần, hệ thống đấu nối, hoàn công thủ tục điện lực. Hoàn thành trong 7–14 ngày làm việc.</p>
+          </div>
+        </div>
+        <!-- Bước 3 -->
+        <div class="flex gap-8 items-start relative">
+          <div class="shrink-0 w-16 h-16 bg-solar-600 text-white rounded-full flex items-center justify-center text-2xl shadow-lg shadow-solar-500/30 relative z-10">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="flex-1 bg-solar-50 rounded-2xl p-6 border border-solar-100 hover:border-solar-300 hover:shadow-lg transition-all duration-300">
+            <div class="inline-flex items-center gap-2 bg-solar-100 text-solar-700 px-3 py-1 rounded-full text-xs font-bold mb-3">GIAI ĐOẠN 3</div>
+            <h3 class="text-xl font-black text-gray-900 mb-2">Trả phí điện thấp hơn EVN</h3>
+            <p class="text-gray-600 leading-relaxed">Mỗi tháng thanh toán tiền điện theo giá thấp hơn EVN từ 10–30%, tuỳ quy mô hệ thống. Toàn bộ bảo trì, sửa chữa do NLP Group chịu trách nhiệm.</p>
+          </div>
+        </div>
+        <!-- Bước 4 -->
+        <div class="flex gap-8 items-start relative">
+          <div class="shrink-0 w-16 h-16 bg-solar-600 text-white rounded-full flex items-center justify-center text-2xl shadow-lg shadow-solar-500/30 relative z-10">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <div class="flex-1 bg-gradient-to-br from-solar-600 to-solar-700 rounded-2xl p-6 border border-solar-500 shadow-lg shadow-solar-500/20">
+            <div class="inline-flex items-center gap-2 bg-white/20 text-white px-3 py-1 rounded-full text-xs font-bold mb-3">GIAI ĐOẠN 4</div>
+            <h3 class="text-xl font-black text-white mb-2">Nhận hệ thống miễn phí</h3>
+            <p class="text-solar-100 leading-relaxed">Sau 7–10 năm hợp đồng, toàn bộ hệ thống điện mặt trời được chuyển giao cho bạn <strong class="text-white">hoàn toàn miễn phí</strong>. Từ đây bạn được hưởng 100% sản lượng điện mà không trả thêm bất kỳ khoản phí nào.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: SO SÁNH CHI PHÍ ĐIỆN -->
+<section class="py-24 bg-gray-50 border-t border-gray-100">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-solar-600 font-bold uppercase tracking-wider text-sm mb-3">So sánh chi phí</p>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Chi phí điện qua 5 năm</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Giá điện EVN tăng bình quân 8–10%/năm trong khi giá Thuê–Mua được cố định suốt hợp đồng.</p>
+    </div>
+    <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-5 text-left font-bold text-gray-500 uppercase tracking-wider text-xs">Năm</th>
+            <th class="px-6 py-5 text-center font-black text-red-600 text-base">Chi phí EVN<br><span class="text-xs font-normal text-gray-400">(tăng ~9%/năm)</span></th>
+            <th class="px-6 py-5 text-center font-black text-solar-700 text-base">Chi phí Thuê–Mua<br><span class="text-xs font-normal text-gray-400">(cố định)</span></th>
+            <th class="px-6 py-5 text-center font-black text-green-600 text-base">Tiết kiệm</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-bold text-gray-700">Năm 1</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">600 triệu/năm</td>
+            <td class="px-6 py-4 text-center"><span class="font-bold text-solar-700">420 triệu/năm</span></td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1 text-green-600 font-bold"><i class="fa-solid fa-arrow-down text-xs"></i> 180 triệu</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-bold text-gray-700">Năm 2</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">654 triệu/năm</td>
+            <td class="px-6 py-4 text-center"><span class="font-bold text-solar-700">420 triệu/năm</span></td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1 text-green-600 font-bold"><i class="fa-solid fa-arrow-down text-xs"></i> 234 triệu</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-bold text-gray-700">Năm 3</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">713 triệu/năm</td>
+            <td class="px-6 py-4 text-center"><span class="font-bold text-solar-700">420 triệu/năm</span></td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1 text-green-600 font-bold"><i class="fa-solid fa-arrow-down text-xs"></i> 293 triệu</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-bold text-gray-700">Năm 4</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">777 triệu/năm</td>
+            <td class="px-6 py-4 text-center"><span class="font-bold text-solar-700">420 triệu/năm</span></td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1 text-green-600 font-bold"><i class="fa-solid fa-arrow-down text-xs"></i> 357 triệu</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-bold text-gray-700">Năm 5</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">847 triệu/năm</td>
+            <td class="px-6 py-4 text-center"><span class="font-bold text-solar-700">420 triệu/năm</span></td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1 text-green-600 font-bold"><i class="fa-solid fa-arrow-down text-xs"></i> 427 triệu</span></td>
+          </tr>
+          <tr class="bg-solar-50">
+            <td class="px-6 py-4 font-black text-solar-900">Tổng 5 năm</td>
+            <td class="px-6 py-4 text-center font-black text-red-600">3,591 triệu</td>
+            <td class="px-6 py-4 text-center font-black text-solar-700">2,100 triệu</td>
+            <td class="px-6 py-4 text-center font-black text-green-600 text-base">1,491 triệu tiết kiệm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-center text-xs text-gray-400 mt-4">* Ví dụ minh hoạ với doanh nghiệp tiêu thụ ~600 triệu/năm. Số liệu thực tế phụ thuộc quy mô hệ thống và mức tiêu thụ.</p>
+  </div>
+</section>
+
+<!-- SECTION 3: ĐIỀU KIỆN & HỒ SƠ -->
+<section class="py-24 bg-white border-t border-gray-100">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-solar-600 font-bold uppercase tracking-wider text-sm mb-3">Điều kiện tham gia</p>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Điều kiện & hồ sơ cần thiết</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Kiểm tra xem doanh nghiệp của bạn có đủ điều kiện tham gia mô hình Thuê–Mua Solar không.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 flex items-start gap-4">
+        <div class="w-12 h-12 bg-solar-100 rounded-xl flex items-center justify-center text-solar-600 text-lg shrink-0">
+          <i class="fa-solid fa-ruler-combined"></i>
+        </div>
+        <div>
+          <h4 class="font-black text-gray-900 mb-1">Diện tích mái ≥ 200m²</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Mái tôn hoặc mái bê tông phẳng, không có bóng che quá nhiều. Hướng Nam là lý tưởng nhất.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 flex items-start gap-4">
+        <div class="w-12 h-12 bg-solar-100 rounded-xl flex items-center justify-center text-solar-600 text-lg shrink-0">
+          <i class="fa-solid fa-money-bill-wave"></i>
+        </div>
+        <div>
+          <h4 class="font-black text-gray-900 mb-1">Tiêu thụ điện ≥ 50 triệu/tháng</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Tương đương ~30.000 kWh/tháng. Phù hợp nhà xưởng, khách sạn, resort, trung tâm thương mại.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 flex items-start gap-4">
+        <div class="w-12 h-12 bg-solar-100 rounded-xl flex items-center justify-center text-solar-600 text-lg shrink-0">
+          <i class="fa-solid fa-file-contract"></i>
+        </div>
+        <div>
+          <h4 class="font-black text-gray-900 mb-1">Hợp đồng thuê mái ≥ 10 năm</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Nếu bạn đang thuê mặt bằng, cần đảm bảo thời hạn thuê còn ít nhất 10 năm hoặc có cam kết gia hạn.</p>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 flex items-start gap-4">
+        <div class="w-12 h-12 bg-solar-100 rounded-xl flex items-center justify-center text-solar-600 text-lg shrink-0">
+          <i class="fa-solid fa-box-archive"></i>
+        </div>
+        <div>
+          <h4 class="font-black text-gray-900 mb-1">Có mặt bằng lắp tủ điện</h4>
+          <p class="text-sm text-gray-500 leading-relaxed">Cần khoảng trống 2–4m² gần tủ điện tổng để lắp tủ inverter và đấu nối hệ thống.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 bg-solar-50 rounded-2xl p-6 border border-solar-100">
+      <h4 class="font-black text-solar-800 mb-3 flex items-center gap-2"><i class="fa-solid fa-folder-open text-solar-600"></i> Hồ sơ cần chuẩn bị</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700">
+        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-solar-500"></i> Hóa đơn tiền điện 3–6 tháng gần nhất</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-solar-500"></i> Bản vẽ mặt bằng mái (nếu có)</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-solar-500"></i> Giấy phép kinh doanh / CMND/CCCD</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-solar-500"></i> Hợp đồng thuê mặt bằng (nếu đang thuê)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: FAQ -->
+<section class="py-24 bg-gray-50 border-t border-gray-100">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-solar-600 font-bold uppercase tracking-wider text-sm mb-3">Câu hỏi thường gặp</p>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Giải đáp thắc mắc</h2>
+    </div>
+    <div class="space-y-5">
+      <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:border-solar-300 hover:shadow-lg transition-all duration-300">
+        <h3 class="text-lg font-black text-gray-900 mb-3 flex items-start gap-3">
+          <span class="w-8 h-8 bg-solar-100 text-solar-700 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">1</span>
+          Ai sở hữu hệ thống trong thời gian hợp đồng?
+        </h3>
+        <p class="text-gray-600 leading-relaxed ml-11">Trong thời gian hợp đồng, hệ thống thuộc sở hữu của NLP Group. Bạn được sử dụng toàn bộ điện năng sản xuất ra với giá thấp hơn EVN. NLP Group chịu toàn bộ chi phí bảo trì, sửa chữa và thay thế thiết bị hỏng hóc.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:border-solar-300 hover:shadow-lg transition-all duration-300">
+        <h3 class="text-lg font-black text-gray-900 mb-3 flex items-start gap-3">
+          <span class="w-8 h-8 bg-solar-100 text-solar-700 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">2</span>
+          Nếu muốn mua lại hệ thống trước hạn hợp đồng?
+        </h3>
+        <p class="text-gray-600 leading-relaxed ml-11">Bạn có thể mua lại hệ thống bất kỳ lúc nào theo giá trị còn lại được tính theo cơ chế khấu hao công khai trong hợp đồng. Thường sau 3–5 năm, giá mua lại giảm đáng kể so với giá trị ban đầu.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:border-solar-300 hover:shadow-lg transition-all duration-300">
+        <h3 class="text-lg font-black text-gray-900 mb-3 flex items-start gap-3">
+          <span class="w-8 h-8 bg-solar-100 text-solar-700 rounded-full flex items-center justify-center text-sm font-black shrink-0 mt-0.5">3</span>
+          Bảo trì hệ thống do ai chịu?
+        </h3>
+        <p class="text-gray-600 leading-relaxed ml-11">100% chi phí bảo trì, vệ sinh tấm pin (2 lần/năm), kiểm tra biến tần, thay thế thiết bị hỏng — tất cả do NLP Group chịu hoàn toàn trong suốt thời gian hợp đồng. Bạn không tốn thêm bất kỳ chi phí nào ngoài tiền điện hàng tháng.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-solar-600 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-white rounded-full translate-x-1/4 translate-y-1/4"></div>
+  </div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <div class="inline-flex items-center gap-2 bg-white/20 border border-white/30 text-white px-4 py-1.5 rounded-full text-sm font-bold mb-8">
+      <i class="fa-solid fa-bolt"></i> 0 đồng vốn – Tiết kiệm ngay từ tháng đầu
+    </div>
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">Đăng ký<br>Thuê–Mua Solar ngay?</h2>
+    <p class="text-lg text-solar-100 mb-10 max-w-2xl mx-auto leading-relaxed">Kỹ sư NLP Group sẽ liên hệ trong <strong class="text-white">15 phút</strong> để khảo sát sơ bộ và tư vấn miễn phí — hoàn toàn không ràng buộc.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button onclick="openModal()" class="bg-white hover:bg-solar-50 text-solar-700 px-10 py-4 rounded-xl font-black text-lg transition-all shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-phone-volume"></i> Nhận tư vấn miễn phí
+      </button>
+      <a href="tel:0333864000" class="bg-solar-700 hover:bg-solar-900 border-2 border-white/30 text-white px-10 py-4 rounded-xl font-black text-lg transition-all flex items-center justify-center gap-2">
+        <i class="fa-solid fa-phone"></i> 0333.864.000
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-gray-300 pt-16 pb-8 border-t-4 border-solar-500">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div>
+        <div class="text-2xl font-black text-white tracking-tighter mb-6">NLP <span class="text-solar-500">GROUP</span></div>
+        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Đơn vị tiên phong cung cấp giải pháp Năng lượng mặt trời & Hạ tầng trạm sạc xe điện thông minh B2B/B2C tại Việt Nam.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6">Dịch vụ</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="../index.html" class="hover:text-solar-500 transition-colors">Tổng quan Dịch vụ</a></li>
+          <li><a href="index.html" class="text-solar-400 font-semibold">Thuê – Mua Solar</a></li>
+          <li><a href="../tra-cham/" class="hover:text-solar-500 transition-colors">Mua trả chậm 0% lãi suất</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6">Giải pháp khác</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="../../dien-mat-troi/" class="hover:text-solar-500 transition-colors">Điện mặt trời áp mái</a></li>
+          <li><a href="../../tru-sac/" class="hover:text-solar-500 transition-colors">Trụ sạc ô tô điện</a></li>
+          <li><a href="../../tin-tuc/" class="hover:text-solar-500 transition-colors">Tin tức & Kiến thức</a></li>
+          <li><a href="../../lien-he/" class="hover:text-solar-500 transition-colors">Liên hệ tư vấn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6">Liên hệ</h4>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-solar-500 shrink-0"></i><span>Tòa nhà Innovation, CVPM Quang Trung, Q.12, TP.HCM</span></li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-solar-500 shrink-0"></i><a href="tel:0333864000" class="font-bold text-white hover:text-solar-400 text-lg">0333.864.000</a></li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-solar-500 shrink-0"></i><a href="mailto:contact@muabandien.com" class="hover:text-solar-400 transition-colors">contact@muabandien.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+      <p>&copy; 2026 NLP GROUP (muabandien.com). All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="../../tin-tuc/" class="hover:text-white transition-colors">Tin tức</a>
+        <a href="../../lien-he/" class="hover:text-white transition-colors">Liên hệ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LEAD MODAL -->
+<div id="leadModal" class="fixed inset-0 z-[100] hidden">
+  <div class="absolute inset-0 bg-dark/60 backdrop-blur-sm" onclick="closeModal()"></div>
+  <div class="flex items-center justify-center min-h-screen px-4">
+    <div class="relative bg-white rounded-3xl overflow-hidden shadow-2xl w-full max-w-lg">
+      <div class="bg-gradient-to-r from-solar-600 to-solar-500 px-6 py-8 text-center relative">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-white/70 hover:text-white text-2xl"><i class="fa-solid fa-xmark"></i></button>
+        <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 text-white text-2xl"><i class="fa-solid fa-bolt"></i></div>
+        <h3 class="text-2xl font-black text-white mb-1">Nhận Tư Vấn Miễn Phí</h3>
+        <p class="text-solar-50 text-sm">Kỹ sư NLP Group sẽ liên hệ trong 15 phút làm việc</p>
+      </div>
+      <div class="px-6 py-8">
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="space-y-4">
+            <div><label class="block text-sm font-bold text-gray-700 mb-1">Họ tên / Tên Doanh nghiệp *</label><input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-solar-500 outline-none" placeholder="Nguyễn Văn A"></div>
+            <div><label class="block text-sm font-bold text-gray-700 mb-1">Số điện thoại *</label><input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-solar-500 outline-none" placeholder="09xx xxx xxx"></div>
+            <div><label class="block text-sm font-bold text-gray-700 mb-1">Quan tâm đến?</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-solar-500 outline-none bg-white">
+                <option>Mô hình Thuê – Mua Solar (0đ vốn)</option>
+                <option>Mua trả chậm 0% lãi suất</option>
+                <option>Mua trực tiếp một lần</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="mt-6 w-full bg-solar-600 hover:bg-solar-700 text-white font-bold py-4 rounded-xl shadow-lg">Đăng Ký Tư Vấn Ngay</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="tel:0333864000" class="fab-btn fab-phone"><i class="fa-solid fa-phone"></i></a>
+<a href="https://zalo.me/0333864000" target="_blank" class="fab-btn fab-zalo"><i class="fa-solid fa-comment-dots"></i></a>
+<script src="../../../js/main.js"></script>
+</body>
+</html>

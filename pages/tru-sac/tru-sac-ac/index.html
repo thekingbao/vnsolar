@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trụ sạc AC 7kW 11kW 22kW – Sạc qua đêm | NLP Group</title>
+    <meta name="description" content="Trụ sạc AC 7kW, 11kW, 22kW thông minh cho nhà ở, căn hộ, văn phòng. Sạc qua đêm, lịch sạc theo giờ, app remote, Type 2, bảo hành 2 năm.">
+    <link rel="icon" type="image/x-icon" href="../../../favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../../../favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="../../../favicon_io/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        solar: { 50:'#f0fdf4',100:'#dcfce7',500:'#22c55e',600:'#16a34a',700:'#15803d',900:'#14532d' },
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+      <a href="../../../index.html" class="text-2xl font-black text-dark tracking-tighter">NLP <span class="text-solar-600">GROUP</span></a>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="../../../index.html#gioi-thieu" class="text-sm font-semibold text-gray-600 hover:text-blue-600">Giới thiệu</a>
+        <a href="../../dien-mat-troi/" class="text-sm font-semibold text-gray-600 hover:text-blue-600">Điện mặt trời</a>
+        <a href="../index.html" class="text-sm font-semibold text-blue-600 border-b-2 border-blue-500 pb-0.5">Trụ sạc</a>
+        <a href="../../dich-vu/" class="text-sm font-semibold text-gray-600 hover:text-blue-600">Dịch vụ</a>
+        <a href="../../tin-tuc/" class="text-sm font-semibold text-gray-600 hover:text-blue-600">Tin tức</a>
+        <a href="../../lien-he/" class="text-sm font-semibold text-gray-600 hover:text-blue-600">Liên hệ</a>
+      </div>
+      <button onclick="openModal()" class="hidden md:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm items-center gap-2 shadow-lg shadow-blue-500/30"><i class="fa-solid fa-phone-volume"></i> Tư vấn ngay</button>
+      <button id="mobile-menu-btn" class="md:hidden text-gray-600 p-2"><i class="fa-solid fa-bars text-2xl"></i></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+    <div class="px-4 pt-2 pb-6 space-y-1">
+      <a href="../../../index.html" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-blue-50 rounded-lg">Trang chủ</a>
+      <a href="../../dien-mat-troi/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-blue-50 rounded-lg">Điện mặt trời</a>
+      <a href="../index.html" class="block px-3 py-3 text-base font-medium text-blue-600 bg-blue-50 rounded-lg">Trụ sạc ô tô điện</a>
+      <a href="../../dich-vu/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-blue-50 rounded-lg">Dịch vụ</a>
+      <a href="../../tin-tuc/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-blue-50 rounded-lg">Tin tức</a>
+      <a href="../../lien-he/" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-blue-50 rounded-lg">Liên hệ</a>
+      <button onclick="openModal()" class="mt-3 w-full bg-blue-600 text-white px-4 py-3 rounded-xl font-semibold flex justify-center items-center gap-2"><i class="fa-solid fa-phone"></i> Gọi: 0333.864.000</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 bg-gradient-to-br from-gray-900 via-blue-950 to-dark relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-20 left-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-700 rounded-full blur-3xl"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <nav class="mb-6 flex items-center gap-2 text-sm">
+      <a href="../../../index.html" class="text-white/70 hover:text-white transition-colors">Trang chủ</a>
+      <i class="fa-solid fa-chevron-right text-white/40 text-xs"></i>
+      <a href="../index.html" class="text-white/70 hover:text-white transition-colors">Trụ sạc ô tô</a>
+      <i class="fa-solid fa-chevron-right text-white/40 text-xs"></i>
+      <span class="text-blue-400 font-semibold">Trụ sạc AC</span>
+    </nav>
+    <div class="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 text-blue-300 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
+      <i class="fa-solid fa-moon"></i> SẠC QUA ĐÊM – THÔNG MINH – TIẾT KIỆM
+    </div>
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+      Trụ sạc AC<br><span class="text-blue-400">7kW / 11kW / 22kW</span>
+    </h1>
+    <p class="text-lg text-gray-300 max-w-2xl mb-10">Giải pháp sạc thông minh cho nhà ở, căn hộ, văn phòng. Sạc qua đêm, quản lý lịch sạc theo giờ thấp điểm, tiết kiệm tối đa chi phí điện.</p>
+    <div class="flex flex-wrap gap-4">
+      <div class="bg-white/10 backdrop-blur rounded-xl px-5 py-3 border border-white/20"><div class="text-2xl font-black text-blue-400">6–8h</div><div class="text-xs text-gray-400 uppercase font-semibold mt-0.5">Sạc đầy qua đêm</div></div>
+      <div class="bg-white/10 backdrop-blur rounded-xl px-5 py-3 border border-white/20"><div class="text-2xl font-black text-blue-400">22kW</div><div class="text-xs text-gray-400 uppercase font-semibold mt-0.5">Công suất tối đa</div></div>
+      <div class="bg-white/10 backdrop-blur rounded-xl px-5 py-3 border border-white/20"><div class="text-2xl font-black text-blue-400">Type 2</div><div class="text-xs text-gray-400 uppercase font-semibold mt-0.5">Chuẩn kết nối</div></div>
+      <div class="bg-white/10 backdrop-blur rounded-xl px-5 py-3 border border-white/20"><div class="text-2xl font-black text-blue-400">2 năm</div><div class="text-xs text-gray-400 uppercase font-semibold mt-0.5">Bảo hành</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: 3 MODEL -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-blue-600 font-bold uppercase tracking-wider text-sm mb-3">Thông số kỹ thuật</p>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">3 Model AC cho mọi nhu cầu</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Từ nhà ở đơn lẻ đến bãi xe văn phòng — chọn đúng công suất để tối ưu chi phí đầu tư.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- 7kW -->
+      <div class="rounded-3xl border-2 border-blue-100 bg-gradient-to-br from-blue-50 to-white p-8 hover:shadow-xl hover:border-blue-300 transition-all duration-300 group">
+        <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold mb-5">
+          <i class="fa-solid fa-house"></i> NHÀ Ở
+        </div>
+        <div class="text-4xl font-black text-blue-600 mb-1">7kW</div>
+        <h3 class="text-lg font-black text-gray-900 mb-4">Trụ sạc AC 7kW</h3>
+        <div class="space-y-2.5 text-sm">
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Loại dòng điện</span>
+            <span class="font-bold text-gray-900">1 pha – 32A</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Thời gian sạc</span>
+            <span class="font-bold text-gray-900">6–8 giờ (40kWh)</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Kết nối</span>
+            <span class="font-bold text-gray-900">Type 2 (IEC 62196)</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Giao tiếp</span>
+            <span class="font-bold text-gray-900">WiFi / 4G</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Bảo vệ</span>
+            <span class="font-bold text-gray-900">IP54, chống sét</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-500">Bảo hành</span>
+            <span class="font-bold text-blue-700">2 năm</span>
+          </div>
+        </div>
+        <p class="mt-5 text-xs text-gray-400 bg-blue-50 rounded-lg px-3 py-2"><i class="fa-solid fa-check-circle text-blue-500 mr-1"></i> Phù hợp: Nhà ở riêng lẻ, hộ gia đình 1 xe</p>
+        <button onclick="openModal()" class="mt-5 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold text-sm transition-colors">Báo giá 7kW</button>
+      </div>
+
+      <!-- 11kW -->
+      <div class="rounded-3xl border-2 border-blue-500 bg-gradient-to-br from-blue-900 to-dark p-8 hover:shadow-xl hover:border-blue-400 transition-all duration-300 group relative text-white">
+        <div class="absolute top-4 right-4 bg-white text-blue-700 text-xs font-black px-3 py-1 rounded-full">PHỔ BIẾN</div>
+        <div class="inline-flex items-center gap-2 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold mb-5">
+          <i class="fa-solid fa-building"></i> CĂN HỘ
+        </div>
+        <div class="text-4xl font-black text-blue-400 mb-1">11kW</div>
+        <h3 class="text-lg font-black text-white mb-4">Trụ sạc AC 11kW</h3>
+        <div class="space-y-2.5 text-sm">
+          <div class="flex justify-between border-b border-white/10 pb-2">
+            <span class="text-blue-200">Loại dòng điện</span>
+            <span class="font-bold text-white">3 pha – 16A</span>
+          </div>
+          <div class="flex justify-between border-b border-white/10 pb-2">
+            <span class="text-blue-200">Thời gian sạc</span>
+            <span class="font-bold text-white">4–5 giờ (40kWh)</span>
+          </div>
+          <div class="flex justify-between border-b border-white/10 pb-2">
+            <span class="text-blue-200">Kết nối</span>
+            <span class="font-bold text-white">Type 2 (IEC 62196)</span>
+          </div>
+          <div class="flex justify-between border-b border-white/10 pb-2">
+            <span class="text-blue-200">Giao tiếp</span>
+            <span class="font-bold text-white">WiFi / 4G / OCPP 1.6</span>
+          </div>
+          <div class="flex justify-between border-b border-white/10 pb-2">
+            <span class="text-blue-200">Bảo vệ</span>
+            <span class="font-bold text-white">IP54, chống sét</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-blue-200">Bảo hành</span>
+            <span class="font-bold text-blue-300">2 năm</span>
+          </div>
+        </div>
+        <p class="mt-5 text-xs text-blue-200 bg-white/10 rounded-lg px-3 py-2"><i class="fa-solid fa-check-circle text-blue-400 mr-1"></i> Phù hợp: Căn hộ chung cư, hầm để xe 3 pha</p>
+        <button onclick="openModal()" class="mt-5 w-full bg-white hover:bg-blue-50 text-blue-700 py-3 rounded-xl font-bold text-sm transition-colors">Báo giá 11kW</button>
+      </div>
+
+      <!-- 22kW -->
+      <div class="rounded-3xl border-2 border-blue-100 bg-gradient-to-br from-blue-50 to-white p-8 hover:shadow-xl hover:border-blue-300 transition-all duration-300 group">
+        <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold mb-5">
+          <i class="fa-solid fa-briefcase"></i> VĂN PHÒNG
+        </div>
+        <div class="text-4xl font-black text-blue-600 mb-1">22kW</div>
+        <h3 class="text-lg font-black text-gray-900 mb-4">Trụ sạc AC 22kW</h3>
+        <div class="space-y-2.5 text-sm">
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Loại dòng điện</span>
+            <span class="font-bold text-gray-900">3 pha – 32A</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Thời gian sạc</span>
+            <span class="font-bold text-gray-900">2–3 giờ (40kWh)</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Kết nối</span>
+            <span class="font-bold text-gray-900">Type 2 (IEC 62196)</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Giao tiếp</span>
+            <span class="font-bold text-gray-900">WiFi / 4G / OCPP 1.6</span>
+          </div>
+          <div class="flex justify-between border-b border-blue-50 pb-2">
+            <span class="text-gray-500">Bảo vệ</span>
+            <span class="font-bold text-gray-900">IP54, chống sét</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-500">Bảo hành</span>
+            <span class="font-bold text-blue-700">2 năm</span>
+          </div>
+        </div>
+        <p class="mt-5 text-xs text-gray-400 bg-blue-50 rounded-lg px-3 py-2"><i class="fa-solid fa-check-circle text-blue-500 mr-1"></i> Phù hợp: Văn phòng, bãi xe thương mại</p>
+        <button onclick="openModal()" class="mt-5 w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold text-sm transition-colors">Báo giá 22kW</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: AC vs DC -->
+<section class="py-24 bg-gray-50 border-t border-gray-100">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-blue-600 font-bold uppercase tracking-wider text-sm mb-3">Khi nào nên chọn AC?</p>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">So sánh Sạc AC vs Sạc DC</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Hiểu đúng đặc điểm để chọn giải pháp phù hợp nhất với địa điểm và tần suất sử dụng của bạn.</p>
+    </div>
+    <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-5 text-left font-bold text-gray-500 uppercase tracking-wider text-xs w-1/3">Tiêu chí</th>
+            <th class="px-6 py-5 text-center font-black text-blue-700 text-base">
+              <div class="flex flex-col items-center gap-1">
+                <span class="inline-flex items-center gap-1.5 bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold mb-1"><i class="fa-solid fa-moon text-xs"></i> TIẾT KIỆM</span>
+                Sạc AC
+              </div>
+            </th>
+            <th class="px-6 py-5 text-center font-black text-purple-700 text-base">
+              <div class="flex flex-col items-center gap-1">
+                <span class="inline-flex items-center gap-1.5 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold mb-1"><i class="fa-solid fa-bolt text-xs"></i> SIÊU NHANH</span>
+                Sạc DC
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-semibold text-gray-700">Chi phí đầu tư</td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1.5 text-blue-700 font-bold"><i class="fa-solid fa-check-circle text-blue-500"></i> Thấp (30–100tr)</span></td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">Cao (800tr – 2 tỷ)</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-semibold text-gray-700">Tốc độ sạc</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">Chậm (2–8 giờ)</td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1.5 text-purple-700 font-bold"><i class="fa-solid fa-bolt text-purple-500"></i> Rất nhanh (20–60 phút)</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-semibold text-gray-700">Thời điểm sạc</td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1.5 text-blue-700 font-bold"><i class="fa-solid fa-check-circle text-blue-500"></i> Qua đêm, giờ thấp điểm</span></td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">Bất kỳ lúc nào</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-semibold text-gray-700">Phù hợp với</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">Nhà ở, căn hộ, văn phòng, xe dùng hàng ngày</td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">Trạm dừng nghỉ, TTTM, cao tốc, fleet xe</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-semibold text-gray-700">Chi phí vận hành</td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1.5 text-blue-700 font-bold"><i class="fa-solid fa-check-circle text-blue-500"></i> Rất thấp</span></td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">Trung bình – cao</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-semibold text-gray-700">Yêu cầu điện</td>
+            <td class="px-6 py-4 text-center"><span class="inline-flex items-center gap-1.5 text-blue-700 font-bold"><i class="fa-solid fa-check-circle text-blue-500"></i> 1 pha hoặc 3 pha thông thường</span></td>
+            <td class="px-6 py-4 text-center text-gray-600 font-medium">3 pha công suất lớn, TBA riêng</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-center text-sm text-gray-400 mt-5">* Khuyến nghị: kết hợp cả AC lẫn DC trong cùng một dự án để tối ưu trải nghiệm người dùng và lợi nhuận.</p>
+  </div>
+</section>
+
+<!-- SECTION 3: TÍNH NĂNG QUẢN LÝ THÔNG MINH -->
+<section class="py-24 bg-white border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <p class="text-blue-600 font-bold uppercase tracking-wider text-sm mb-3">Quản lý thông minh</p>
+      <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">4 Tính năng quản lý thông minh</h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Hệ thống quản lý trung tâm tích hợp đầy đủ, giúp tối ưu chi phí điện và trải nghiệm người dùng.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all duration-300 group text-center">
+        <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-5 mx-auto shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <h3 class="text-lg font-black text-gray-900 mb-3">Lịch sạc theo giờ</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Tự động sạc trong giờ thấp điểm (22h–6h). Tiết kiệm 30–40% hóa đơn điện so với sạc ban ngày.</p>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all duration-300 group text-center">
+        <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-5 mx-auto shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-gauge-high"></i>
+        </div>
+        <h3 class="text-lg font-black text-gray-900 mb-3">Giới hạn công suất</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Load balancing thông minh, tự động giảm công suất sạc khi hệ thống điện gần đạt ngưỡng, tránh quá tải.</p>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all duration-300 group text-center">
+        <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-5 mx-auto shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <h3 class="text-lg font-black text-gray-900 mb-3">App Remote</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Bật/tắt sạc từ xa, xem trạng thái real-time, nhận thông báo khi sạc đầy — ngay trên điện thoại.</p>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all duration-300 group text-center">
+        <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-5 mx-auto shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-qrcode"></i>
+        </div>
+        <h3 class="text-lg font-black text-gray-900 mb-3">Thanh toán App</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Thanh toán qua QR/app ví điện tử. Xuất hóa đơn tự động, theo dõi lịch sử sạc theo từng xe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-gradient-to-br from-blue-900 via-blue-800 to-dark relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-white rounded-full translate-x-1/4 translate-y-1/4"></div>
+  </div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <div class="inline-flex items-center gap-2 bg-white/20 border border-white/30 text-white px-4 py-1.5 rounded-full text-sm font-bold mb-8">
+      <i class="fa-solid fa-bolt"></i> Tư vấn miễn phí – Khảo sát tận nơi
+    </div>
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">Lắp trụ sạc AC<br>ngay hôm nay?</h2>
+    <p class="text-lg text-blue-200 mb-10 max-w-2xl mx-auto leading-relaxed">Kỹ sư NLP Group tư vấn chọn đúng model, lắp đặt trong 1–2 ngày, đào tạo sử dụng kèm app quản lý.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button onclick="openModal()" class="bg-white hover:bg-blue-50 text-blue-700 px-10 py-4 rounded-xl font-black text-lg transition-all shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-phone-volume"></i> Nhận tư vấn miễn phí
+      </button>
+      <a href="tel:0333864000" class="bg-blue-700 hover:bg-blue-900 border-2 border-white/30 text-white px-10 py-4 rounded-xl font-black text-lg transition-all flex items-center justify-center gap-2">
+        <i class="fa-solid fa-phone"></i> 0333.864.000
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-gray-300 pt-16 pb-8 border-t-4 border-blue-500">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div>
+        <div class="text-2xl font-black text-white tracking-tighter mb-6">NLP <span class="text-solar-500">GROUP</span></div>
+        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Đơn vị tiên phong cung cấp giải pháp Năng lượng mặt trời & Hạ tầng trạm sạc xe điện thông minh B2B/B2C tại Việt Nam.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-solar-500 hover:text-white transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6">Trụ sạc</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="../index.html" class="hover:text-solar-500 transition-colors">Tổng quan Trụ sạc</a></li>
+          <li><a href="../tru-sac-dc/" class="hover:text-solar-500 transition-colors">Trụ sạc DC 120kW / 240kW</a></li>
+          <li><a href="index.html" class="text-blue-400 font-semibold">Trụ sạc AC 7/11/22kW</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6">Giải pháp khác</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="../../dien-mat-troi/" class="hover:text-solar-500 transition-colors">Điện mặt trời áp mái</a></li>
+          <li><a href="../../dich-vu/" class="hover:text-solar-500 transition-colors">Dịch vụ Thuê – Mua</a></li>
+          <li><a href="../../tin-tuc/" class="hover:text-solar-500 transition-colors">Tin tức & Kiến thức</a></li>
+          <li><a href="../../lien-he/" class="hover:text-solar-500 transition-colors">Liên hệ tư vấn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6">Liên hệ</h4>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-solar-500 shrink-0"></i><span>Tòa nhà Innovation, CVPM Quang Trung, Q.12, TP.HCM</span></li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-solar-500 shrink-0"></i><a href="tel:0333864000" class="font-bold text-white hover:text-solar-400 text-lg">0333.864.000</a></li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-solar-500 shrink-0"></i><a href="mailto:contact@muabandien.com" class="hover:text-solar-400 transition-colors">contact@muabandien.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+      <p>&copy; 2026 NLP GROUP (muabandien.com). All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="../../tin-tuc/" class="hover:text-white transition-colors">Tin tức</a>
+        <a href="../../lien-he/" class="hover:text-white transition-colors">Liên hệ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LEAD MODAL -->
+<div id="leadModal" class="fixed inset-0 z-[100] hidden">
+  <div class="absolute inset-0 bg-dark/60 backdrop-blur-sm" onclick="closeModal()"></div>
+  <div class="flex items-center justify-center min-h-screen px-4">
+    <div class="relative bg-white rounded-3xl overflow-hidden shadow-2xl w-full max-w-lg">
+      <div class="bg-gradient-to-r from-blue-700 to-blue-600 px-6 py-8 text-center relative">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-white/70 hover:text-white text-2xl"><i class="fa-solid fa-xmark"></i></button>
+        <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 text-white text-2xl"><i class="fa-solid fa-charging-station"></i></div>
+        <h3 class="text-2xl font-black text-white mb-1">Nhận Tư Vấn Miễn Phí</h3>
+        <p class="text-blue-100 text-sm">Kỹ sư NLP Group sẽ liên hệ trong 15 phút làm việc</p>
+      </div>
+      <div class="px-6 py-8">
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="space-y-4">
+            <div><label class="block text-sm font-bold text-gray-700 mb-1">Họ tên *</label><input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Nguyễn Văn A"></div>
+            <div><label class="block text-sm font-bold text-gray-700 mb-1">Số điện thoại *</label><input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="09xx xxx xxx"></div>
+            <div><label class="block text-sm font-bold text-gray-700 mb-1">Quan tâm đến?</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                <option>Trụ sạc AC 7kW – Nhà ở</option>
+                <option>Trụ sạc AC 11kW – Căn hộ</option>
+                <option>Trụ sạc AC 22kW – Văn phòng / Bãi xe</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg">Yêu Cầu Tư Vấn Lắp Đặt</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="tel:0333864000" class="fab-btn fab-phone"><i class="fa-solid fa-phone"></i></a>
+<a href="https://zalo.me/0333864000" target="_blank" class="fab-btn fab-zalo"><i class="fa-solid fa-comment-dots"></i></a>
+<script src="../../../js/main.js"></script>
+</body>
+</html>
